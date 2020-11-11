@@ -5,7 +5,7 @@ import Admin from "./views/admin.vue"
 import Welcome from "./views/admin/welcome.vue"
 // import Category from "./views/admin/category.vue"
 // import Course from "./views/admin/course.vue"
-// import Chapter from "./views/admin/chapter.vue"
+import Chapter from "./views/admin/chapter.vue"
 // import Section from "./views/admin/section.vue"
 // import Content from "./views/admin/content.vue"
 // import Teacher from "./views/admin/teacher.vue"
@@ -19,7 +19,7 @@ import Welcome from "./views/admin/welcome.vue"
 Vue.use(Router);
 
 export default new Router({
-    mode: "hash",
+    mode: "history",
     base: process.env.BASE_URL,
     routes: [{
         path: "*",
@@ -36,6 +36,10 @@ export default new Router({
         children:[{
             path: "welcome",
             component: Welcome,
-        }]
+        },{
+            path: "business/chapter",
+            component: Chapter,
+        }
+        ]
     }]
 })
