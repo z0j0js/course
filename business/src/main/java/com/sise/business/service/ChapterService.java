@@ -1,5 +1,6 @@
 package com.sise.business.service;
 
+import com.github.pagehelper.PageHelper;
 import com.sise.business.domain.Chapter;
 import com.sise.business.domain.ChapterExample;
 import com.sise.business.dto.ChapterDto;
@@ -18,6 +19,7 @@ public class ChapterService {
     private ChapterMapper chapterMapper;
 
     public List<ChapterDto> list() {
+        PageHelper.startPage(1,1);
         ChapterExample chapterExample = new ChapterExample();
         List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
         List<ChapterDto> chapterDtoList = new ArrayList<ChapterDto>();
