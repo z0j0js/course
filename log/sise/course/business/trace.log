@@ -189,3 +189,969 @@
 2020-11-12 21:47:44.324 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
 2020-11-12 21:47:44.324 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章一
 2020-11-12 21:47:44.326 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 21:52:02.228 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 21:57:02.236 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:00:57.321 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:00:57.322 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:00:57.323 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:00:57.323 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-12 22:00:57.323 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:00:57.324 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:00:57.324 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:00:57.325 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:00:57.325 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章一
+2020-11-12 22:00:57.326 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:01:09.839 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:01:09.839 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:01:09.840 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:01:09.841 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-12 22:01:09.841 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:01:09.842 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:01:09.842 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:01:09.843 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:01:09.843 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章一
+2020-11-12 22:01:09.843 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:01:46.444 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:01:46.445 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:01:46.445 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:01:46.446 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-12 22:01:46.446 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:01:46.447 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:01:46.447 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:01:46.448 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:01:46.449 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章一
+2020-11-12 22:01:46.449 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:02:02.245 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:02:41.997 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:02:41.998 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:02:41.999 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:02:41.999 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-12 22:02:41.999 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:02:42.000 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:02:42.002 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:02:42.004 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:02:42.004 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章一
+2020-11-12 22:02:42.005 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:03:32.751 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:03:32.752 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:03:32.754 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:03:32.754 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-12 22:03:32.755 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:03:32.757 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:03:32.757 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:03:32.758 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:03:32.758 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章一
+2020-11-12 22:03:32.759 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:03:34.432 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:03:34.433 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:03:34.434 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:03:34.435 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-12 22:03:34.435 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:03:34.436 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:03:34.436 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:03:34.437 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:03:34.437 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章一
+2020-11-12 22:03:34.438 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:07:02.254 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:09:21.592 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:09:21.592 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:09:21.594 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:09:21.594 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:09:21.595 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:09:21.595 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:09:21.596 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:09:21.596 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:09:21.596 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:09:21.597 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:09:23.551 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:09:23.551 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:09:23.552 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:09:23.552 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:09:23.552 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:09:23.552 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:09:23.553 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:09:23.553 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:09:23.553 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:09:23.554 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:09:24.682 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:09:24.683 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:09:24.684 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:09:24.684 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:09:24.684 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:09:24.685 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:09:24.685 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:09:24.686 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:09:24.686 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:09:24.686 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:09:25.446 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:09:25.447 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:09:25.447 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:09:25.448 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:09:25.448 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:09:25.449 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:09:25.449 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:09:25.450 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:09:25.450 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:09:25.451 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:09:26.104 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:09:26.105 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:09:26.106 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:09:26.106 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:09:26.106 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:09:26.107 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:09:26.108 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:09:26.108 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:09:26.108 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:09:26.109 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:11:54.266 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:11:54.266 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:11:54.269 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:11:54.270 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:11:54.272 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:11:54.273 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:11:54.273 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:11:54.274 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:11:54.274 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:11:54.274 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:12:02.260 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:12:14.184 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:12:14.184 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:14.185 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:12:14.185 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:12:14.186 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:12:14.186 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:12:14.187 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:12:14.187 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:12:14.188 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:12:14.189 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:12:21.115 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:12:21.115 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:21.116 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:12:21.116 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:12:21.116 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:12:21.117 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:12:21.117 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:12:21.118 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:12:21.118 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:12:21.118 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:12:32.152 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:12:32.152 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:32.152 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:12:32.153 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:12:32.153 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:12:32.153 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-11-12 22:12:32.154 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:32.154 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:12:32.154 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:12:32.155 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:12:32.155 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:12:32.155 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:12:32.155 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:12:32.155 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:12:32.156 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:12:32.156 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:12:32.156 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:12:32.156 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:12:32.156 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000010, 00000000, 测试大章10
+2020-11-12 22:12:32.157 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000011, 00000000, 测试大章11
+2020-11-12 22:12:32.157 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000012, 00000000, 测试大章12
+2020-11-12 22:12:32.157 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000013, 00000000, 测试大章13
+2020-11-12 22:12:32.157 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000014, 00000000, 测试大章14
+2020-11-12 22:12:32.158 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000015, 00000000, 测试大章15
+2020-11-12 22:12:32.158 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 16
+2020-11-12 22:12:38.383 WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver :199  [32m        [0;39m Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize instance of `int` out of START_OBJECT token; nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `int` out of START_OBJECT token
+ at [Source: (PushbackInputStream); line: 1, column: 9] (through reference chain: com.sise.business.dto.PageDto["size"])]
+2020-11-12 22:12:43.552 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:12:43.552 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:43.553 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:12:43.553 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:12:43.554 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:12:43.554 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-11-12 22:12:43.555 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:43.555 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:12:43.556 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:12:43.556 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:12:43.557 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:12:43.557 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:12:43.557 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:12:43.558 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:12:43.558 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:12:43.558 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:12:43.559 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:12:43.559 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:12:43.559 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000010, 00000000, 测试大章10
+2020-11-12 22:12:43.560 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000011, 00000000, 测试大章11
+2020-11-12 22:12:43.560 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000012, 00000000, 测试大章12
+2020-11-12 22:12:43.560 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000013, 00000000, 测试大章13
+2020-11-12 22:12:43.561 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000014, 00000000, 测试大章14
+2020-11-12 22:12:43.561 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000015, 00000000, 测试大章15
+2020-11-12 22:12:43.561 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 16
+2020-11-12 22:12:46.119 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:12:46.120 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:46.121 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:12:46.121 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:12:46.121 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:12:46.122 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-11-12 22:12:46.122 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:46.122 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:12:46.123 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:12:46.123 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:12:46.123 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:12:46.123 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:12:46.124 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:12:46.124 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:12:46.124 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:12:46.124 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:12:46.125 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:12:46.125 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:12:46.125 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000010, 00000000, 测试大章10
+2020-11-12 22:12:46.125 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000011, 00000000, 测试大章11
+2020-11-12 22:12:46.126 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000012, 00000000, 测试大章12
+2020-11-12 22:12:46.126 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000013, 00000000, 测试大章13
+2020-11-12 22:12:46.126 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000014, 00000000, 测试大章14
+2020-11-12 22:12:46.126 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000015, 00000000, 测试大章15
+2020-11-12 22:12:46.127 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 16
+2020-11-12 22:12:52.106 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:12:52.107 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:52.107 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:12:52.108 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:12:52.108 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:12:52.109 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter 
+2020-11-12 22:12:52.109 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:12:52.111 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:12:52.111 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:12:52.111 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:12:52.112 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:12:52.112 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:12:52.112 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:12:52.113 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:12:52.113 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:12:52.113 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:12:52.113 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:12:52.114 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:12:52.114 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000010, 00000000, 测试大章10
+2020-11-12 22:12:52.114 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000011, 00000000, 测试大章11
+2020-11-12 22:12:52.114 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000012, 00000000, 测试大章12
+2020-11-12 22:12:52.115 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000013, 00000000, 测试大章13
+2020-11-12 22:12:52.115 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000014, 00000000, 测试大章14
+2020-11-12 22:12:52.115 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000015, 00000000, 测试大章15
+2020-11-12 22:12:52.115 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 16
+2020-11-12 22:15:30.389 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:15:30.390 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:15:30.391 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:15:30.391 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:15:30.391 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:15:30.392 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:15:30.392 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:15:30.393 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:15:30.393 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:15:30.394 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:15:30.394 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:15:30.395 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:15:30.396 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:15:30.397 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:15:30.397 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:15:30.397 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:15:30.397 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:15:30.398 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:15:30.398 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:15:45.659 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:15:45.659 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:15:45.660 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:15:45.660 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:15:45.661 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:15:45.661 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:15:45.662 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:15:45.663 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:15:45.663 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:15:45.663 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:15:45.663 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:15:45.664 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:15:45.664 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:15:45.664 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:15:45.665 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:15:45.665 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:15:45.665 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:15:45.666 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:15:45.666 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:15:49.353 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:15:49.353 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:15:49.354 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:15:49.354 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:15:49.354 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:15:49.355 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:15:49.355 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:15:49.357 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:15:49.357 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:15:49.357 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:15:49.357 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:15:49.358 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:15:49.359 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:15:49.360 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:15:49.360 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:15:49.360 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:15:49.360 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:15:49.361 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:15:49.361 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:15:53.821 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:15:53.822 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:15:53.822 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:15:53.823 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:15:53.823 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:15:53.824 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:15:53.824 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:15:53.826 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:15:53.826 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:15:53.827 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:15:53.827 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:15:53.827 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:15:53.828 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:15:53.828 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:15:53.828 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:15:53.828 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:15:53.829 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:15:53.829 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:15:53.829 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:15:56.946 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:15:56.947 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:15:56.947 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:15:56.948 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:15:56.948 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:15:56.948 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:15:56.949 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:15:56.949 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:15:56.949 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:15:56.949 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:15:56.950 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:15:56.950 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:15:56.950 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:15:56.950 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:15:56.951 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:15:56.951 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:15:56.951 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:15:56.952 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:15:56.952 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:16:30.046 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:16:30.047 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:16:30.047 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:16:30.047 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:16:30.048 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:16:30.048 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:16:30.048 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:16:30.049 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:16:30.049 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:16:30.049 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:16:30.050 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:16:30.050 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:16:30.050 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:16:30.050 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:16:30.051 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:16:30.051 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:16:30.051 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:16:30.051 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:16:30.051 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:16:55.494 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:16:55.495 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:16:55.496 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:16:55.497 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:16:55.497 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:16:55.498 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:16:55.498 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:16:55.499 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:16:55.499 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:16:55.500 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:16:55.500 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:16:55.500 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:16:55.501 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:16:55.501 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:16:55.501 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:16:55.501 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:16:55.501 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:16:55.502 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:16:55.502 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:17:02.275 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:17:47.480 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:17:47.480 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:17:47.482 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:17:47.482 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 16
+2020-11-12 22:17:47.482 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:17:47.483 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:17:47.483 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:17:47.484 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:17:47.484 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:17:47.484 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:17:47.485 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:17:47.485 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:17:47.485 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:17:47.485 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:17:47.485 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:17:47.486 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:17:47.486 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:17:47.486 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:17:47.486 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:22:02.280 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:22:40.128 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:22:40.129 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:22:40.130 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:22:40.130 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:22:40.130 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:22:40.131 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:22:40.131 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:22:40.132 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:22:40.132 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:22:40.132 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:22:40.133 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:22:40.133 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:22:40.133 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:22:40.133 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:22:40.133 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:22:40.134 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:22:40.134 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:22:40.134 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:22:40.134 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:23:04.697 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:23:04.697 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:23:04.698 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:23:04.698 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:23:04.698 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:23:04.699 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:23:04.699 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:23:04.700 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:23:04.700 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:23:04.700 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:23:12.646 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:23:12.646 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:23:12.646 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:23:12.647 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:23:12.647 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:23:12.648 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:23:12.648 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:23:12.648 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:23:12.648 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:23:12.649 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:23:21.784 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:23:21.784 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:23:21.785 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:23:21.785 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:23:21.786 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:23:21.786 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:23:21.786 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:23:21.787 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:23:21.787 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:23:21.788 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:23:24.676 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:23:24.677 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:23:24.677 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:23:24.677 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:23:24.678 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:23:24.678 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:23:24.679 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-12 22:23:24.679 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:23:24.679 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:23:24.680 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:23:24.680 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:23:24.680 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:23:24.680 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:23:24.680 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:25:30.510 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:25:30.511 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:25:30.511 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:25:30.512 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:25:30.512 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:25:30.512 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:25:30.513 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:25:30.513 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:25:30.513 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:25:30.514 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:25:30.514 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:25:30.514 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:25:30.514 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:25:30.514 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:25:30.515 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:25:30.515 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:25:30.515 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:25:30.515 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:25:30.515 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:25:34.791 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:25:34.792 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:25:34.794 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:25:34.794 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:25:34.794 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:25:34.795 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:25:34.795 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:25:34.796 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:25:34.796 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:25:34.796 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:25:34.797 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:25:34.797 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:25:34.797 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:25:34.797 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:25:34.798 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:25:34.798 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:25:34.798 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:25:34.798 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:25:34.798 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:25:40.264 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:25:40.265 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:25:40.265 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:25:40.265 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:25:40.266 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:25:40.266 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:25:40.267 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:25:40.267 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:25:40.267 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:25:40.268 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:25:40.268 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:25:40.268 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:25:40.268 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:25:40.268 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:25:40.269 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:25:40.269 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:25:40.269 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:25:40.269 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:25:40.270 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:25:43.460 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:25:43.461 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:25:43.462 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:25:43.463 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:25:43.463 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:25:43.463 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:25:43.464 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:25:43.464 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:25:43.465 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:25:43.465 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:25:43.465 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:25:43.465 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:25:43.465 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:25:43.466 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:25:43.466 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:25:43.466 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:25:43.466 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:25:43.467 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:25:43.467 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:25:47.735 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:25:47.735 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:25:47.736 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:25:47.736 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:25:47.736 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:25:47.737 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:25:47.738 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:25:47.739 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:25:47.739 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:25:47.739 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:25:47.739 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:25:47.740 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:25:47.740 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:25:47.740 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:25:47.740 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:25:47.740 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:25:47.741 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:25:47.741 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:25:47.741 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:25:52.498 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:25:52.498 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:25:52.499 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:25:52.499 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:25:52.499 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:25:52.500 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:25:52.500 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-12 22:25:52.501 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:25:52.501 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:25:52.502 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:25:52.502 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:25:52.502 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:25:52.503 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:25:52.503 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:25:59.563 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:25:59.564 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:25:59.565 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:25:59.567 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:25:59.570 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:25:59.571 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:25:59.572 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-12 22:25:59.573 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:25:59.574 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:25:59.574 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:25:59.574 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:25:59.574 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:25:59.574 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:25:59.575 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:26:33.138 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:26:33.139 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:26:33.140 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:26:33.140 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:26:33.140 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:26:33.141 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:26:33.142 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-12 22:26:33.143 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:26:33.143 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:26:33.144 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:26:33.144 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:26:33.144 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:26:33.145 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:26:33.145 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:26:43.772 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:26:43.772 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:26:43.773 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:26:43.773 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:26:43.773 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:26:43.774 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:26:43.774 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:26:43.774 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:26:43.775 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:26:43.775 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:26:54.297 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:26:54.298 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:26:54.298 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:26:54.298 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:26:54.299 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:26:54.300 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:26:54.300 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer)
+2020-11-12 22:26:54.301 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:26:54.301 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:26:54.301 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:26:54.302 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:26:54.302 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:26:54.302 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:26:54.302 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:26:54.302 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:26:54.303 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:26:54.303 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:26:54.303 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:26:54.303 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 10
+2020-11-12 22:27:02.289 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:31:11.435 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:31:11.436 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:31:11.437 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:31:11.437 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:31:11.437 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:31:11.438 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:31:11.438 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-12 22:31:11.439 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:31:11.439 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:31:11.440 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:31:11.440 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:31:11.440 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:31:11.441 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:31:11.441 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:31:16.140 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:31:16.141 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:31:16.141 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:31:16.142 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:31:16.142 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:31:16.143 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:31:16.143 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:31:16.144 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:31:16.144 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:31:16.144 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:31:38.432 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:31:38.432 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:31:38.433 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:31:38.433 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:31:38.433 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:31:38.434 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:31:38.434 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:31:38.435 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:31:38.435 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:31:38.436 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:32:02.290 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:33:27.600 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:33:27.600 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:33:27.601 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:33:27.602 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:33:27.602 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:33:27.603 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:33:27.603 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-12 22:33:27.604 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:33:27.604 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:33:27.605 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:33:27.605 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:33:27.605 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:33:27.605 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:33:27.605 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:33:39.106 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:33:39.106 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:33:39.107 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:33:39.107 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:33:39.107 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:33:39.107 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:33:39.108 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:33:39.108 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:33:39.108 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:33:39.108 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:37:02.294 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:42:02.306 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:47:02.320 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:52:02.333 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:56:56.371 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:56:56.372 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:56:56.374 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:56:56.374 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:56:56.375 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:56:56.375 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:56:56.375 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-12 22:56:56.376 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:56:56.376 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:56:56.377 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:56:56.377 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:56:56.377 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:56:56.377 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:56:56.378 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:56:57.981 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:56:57.981 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:56:57.982 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:56:57.982 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:56:57.983 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:56:57.983 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:56:57.984 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer), 5(Integer)
+2020-11-12 22:56:57.984 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:56:57.985 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:56:57.985 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:56:57.985 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:56:57.986 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:56:57.986 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:56:57.986 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:56:58.895 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:56:58.896 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:56:58.897 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:56:58.897 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:56:58.897 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:56:58.897 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:56:58.898 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer), 5(Integer)
+2020-11-12 22:56:58.898 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:56:58.899 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000010, 00000000, 测试大章10
+2020-11-12 22:56:58.899 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000011, 00000000, 测试大章11
+2020-11-12 22:56:58.899 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000012, 00000000, 测试大章12
+2020-11-12 22:56:58.899 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000013, 00000000, 测试大章13
+2020-11-12 22:56:58.899 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000014, 00000000, 测试大章14
+2020-11-12 22:56:58.900 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:56:59.750 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:56:59.750 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:56:59.751 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:56:59.751 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:56:59.751 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:56:59.752 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:56:59.752 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 15(Integer), 5(Integer)
+2020-11-12 22:56:59.753 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:56:59.753 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000015, 00000000, 测试大章15
+2020-11-12 22:56:59.754 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000016, 00000000, 测试大章16
+2020-11-12 22:56:59.754 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000017, 00000000, 测试大章17
+2020-11-12 22:56:59.754 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000018, 00000000, 测试大章18
+2020-11-12 22:56:59.754 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000019, 00000000, 测试大章19
+2020-11-12 22:56:59.755 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:57:00.237 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:00.238 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:00.239 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:00.239 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:00.239 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:00.240 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:00.240 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
+2020-11-12 22:57:00.241 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:00.241 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000020, 00000000, 测试大章20
+2020-11-12 22:57:00.241 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000021, 00000000, 测试大章21
+2020-11-12 22:57:00.241 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-12 22:57:02.340 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-12 22:57:02.712 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:02.712 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:02.713 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:02.713 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:02.714 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:02.715 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:02.715 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 15(Integer), 5(Integer)
+2020-11-12 22:57:02.716 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:02.716 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000015, 00000000, 测试大章15
+2020-11-12 22:57:02.716 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000016, 00000000, 测试大章16
+2020-11-12 22:57:02.716 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000017, 00000000, 测试大章17
+2020-11-12 22:57:02.717 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000018, 00000000, 测试大章18
+2020-11-12 22:57:02.717 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000019, 00000000, 测试大章19
+2020-11-12 22:57:02.717 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-12 22:57:06.292 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:06.293 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:06.293 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:06.294 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:06.294 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:06.295 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-12 22:57:06.295 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-12 22:57:06.296 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:06.296 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-12 22:57:06.296 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:07.885 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:07.885 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:07.886 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:07.886 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:07.887 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:07.888 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:07.888 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer), 1(Integer)
+2020-11-12 22:57:07.889 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:07.889 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-12 22:57:07.890 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:08.525 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:08.526 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:08.526 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:08.526 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:08.527 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:08.527 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:08.527 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 2(Integer), 1(Integer)
+2020-11-12 22:57:08.528 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:08.528 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-12 22:57:08.528 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:08.949 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:08.950 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:08.951 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:08.951 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:08.952 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:08.952 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:08.952 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 3(Integer), 1(Integer)
+2020-11-12 22:57:08.953 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:08.953 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-12 22:57:08.954 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:09.457 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:09.457 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:09.458 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:09.458 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:09.458 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:09.458 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:09.458 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 4(Integer), 1(Integer)
+2020-11-12 22:57:09.459 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:09.459 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-12 22:57:09.459 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:10.728 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:10.728 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:10.729 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:10.729 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:10.730 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:10.731 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:10.731 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer), 1(Integer)
+2020-11-12 22:57:10.731 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:10.732 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000005, 00000000, 测试大章05
+2020-11-12 22:57:10.732 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.128 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:11.129 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:11.129 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:11.129 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:11.130 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.130 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:11.130 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 6(Integer), 1(Integer)
+2020-11-12 22:57:11.131 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:11.131 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000006, 00000000, 测试大章06
+2020-11-12 22:57:11.132 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.415 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:11.415 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:11.416 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:11.417 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:11.417 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.418 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:11.418 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 7(Integer), 1(Integer)
+2020-11-12 22:57:11.419 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:11.419 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000007, 00000000, 测试大章07
+2020-11-12 22:57:11.420 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.581 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:11.582 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:11.582 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:11.583 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:11.583 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.583 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:11.584 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 8(Integer), 1(Integer)
+2020-11-12 22:57:11.585 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:11.585 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000008, 00000000, 测试大章08
+2020-11-12 22:57:11.585 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.741 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:11.741 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:11.742 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:11.742 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:11.742 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.743 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:11.743 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 9(Integer), 1(Integer)
+2020-11-12 22:57:11.744 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:11.744 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000009, 00000000, 测试大章09
+2020-11-12 22:57:11.744 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.908 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:11.908 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:11.909 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:11.909 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:11.909 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:11.910 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:11.910 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 10(Integer), 1(Integer)
+2020-11-12 22:57:11.911 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:11.911 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000010, 00000000, 测试大章10
+2020-11-12 22:57:11.911 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:12.081 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:12.081 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:12.082 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:12.082 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:12.083 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:12.083 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:12.084 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 11(Integer), 1(Integer)
+2020-11-12 22:57:12.085 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:12.085 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000011, 00000000, 测试大章11
+2020-11-12 22:57:12.085 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:12.717 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:12.718 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:12.719 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:12.719 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:12.719 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:12.719 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:12.720 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 12(Integer), 1(Integer)
+2020-11-12 22:57:12.720 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:12.721 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000012, 00000000, 测试大章12
+2020-11-12 22:57:12.721 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:12.897 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:12.897 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:12.898 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:12.898 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:12.898 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:12.898 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:12.899 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 13(Integer), 1(Integer)
+2020-11-12 22:57:12.899 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:12.900 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000013, 00000000, 测试大章13
+2020-11-12 22:57:12.900 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.080 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:13.081 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:13.081 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:13.082 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:13.082 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.083 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:13.083 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 14(Integer), 1(Integer)
+2020-11-12 22:57:13.084 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:13.084 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000014, 00000000, 测试大章14
+2020-11-12 22:57:13.085 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.449 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:13.449 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:13.450 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:13.450 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:13.451 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.451 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:13.451 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 15(Integer), 1(Integer)
+2020-11-12 22:57:13.452 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:13.452 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000015, 00000000, 测试大章15
+2020-11-12 22:57:13.453 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.621 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:13.621 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:13.622 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:13.622 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:13.622 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.622 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:13.623 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 16(Integer), 1(Integer)
+2020-11-12 22:57:13.623 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:13.623 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000016, 00000000, 测试大章16
+2020-11-12 22:57:13.624 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.796 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:13.796 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:13.796 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:13.797 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:13.797 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.797 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:13.797 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 17(Integer), 1(Integer)
+2020-11-12 22:57:13.798 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:13.798 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000017, 00000000, 测试大章17
+2020-11-12 22:57:13.799 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.944 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-12 22:57:13.945 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-12 22:57:13.945 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-12 22:57:13.945 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-12 22:57:13.946 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-12 22:57:13.946 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-12 22:57:13.946 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 18(Integer), 1(Integer)
+2020-11-12 22:57:13.947 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-12 22:57:13.947 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000018, 00000000, 测试大章18
+2020-11-12 22:57:13.947 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
