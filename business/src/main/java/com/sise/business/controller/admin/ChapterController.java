@@ -1,7 +1,9 @@
 package com.sise.business.controller.admin;
 
 import com.sise.business.dto.ChapterDto;
+import com.sise.business.dto.PageDto;
 import com.sise.business.service.ChapterService;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,7 +18,8 @@ public class ChapterController {
     private ChapterService chapterService;
 
     @RequestMapping("/list")
-    public List<ChapterDto> list(){
-        return chapterService.list();
+    public PageDto list(@RequestBody PageDto pageDto){
+        chapterService.list(pageDto);
+        return pageDto;
     }
 }
