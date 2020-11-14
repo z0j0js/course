@@ -1,182 +1,481 @@
-2020-11-14 22:38:03.531 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-11-14 22:38:03.683 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-14 22:38:05.216 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
-2020-11-14 22:38:06.198 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b9a28b63-9f0b-32a3-ae3c-528054650cc2
-2020-11-14 22:38:06.287 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-14 22:38:06.312 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-11-14 22:38:06.677 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
-2020-11-14 22:38:06.684 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
-2020-11-14 22:38:06.685 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
-2020-11-14 22:38:06.686 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
-2020-11-14 22:38:06.799 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
-2020-11-14 22:38:06.800 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1453 ms
-2020-11-14 22:38:07.392 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-11-14 22:38:07.392 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-11-14 22:38:07.396 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
-2020-11-14 22:38:07.396 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-2020-11-14 22:38:07.520 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
-2020-11-14 22:38:07.844 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
-2020-11-14 22:38:09.286 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-11-14 22:38:10.741 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-11-14 22:38:12.190 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-11-14 22:38:12.211 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
-2020-11-14 22:38:12.242 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
-2020-11-14 22:38:12.301 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
-2020-11-14 22:38:12.326 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
-2020-11-14 22:38:12.688 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
-2020-11-14 22:38:12.688 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
-2020-11-14 22:38:12.786 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
-2020-11-14 22:38:12.787 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
-2020-11-14 22:38:12.951 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
-2020-11-14 22:38:13.177 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
-2020-11-14 22:38:13.177 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
-2020-11-14 22:38:13.177 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
-2020-11-14 22:38:13.177 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
-2020-11-14 22:38:13.178 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
-2020-11-14 22:38:13.178 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
-2020-11-14 22:38:13.179 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
-2020-11-14 22:38:13.331 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
-2020-11-14 22:38:13.334 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
-2020-11-14 22:38:13.335 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
-2020-11-14 22:38:13.339 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1605364693338 with initial instances count: 1
-2020-11-14 22:38:13.340 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
-2020-11-14 22:38:13.341 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605364693341, current=UP, previous=STARTING]
-2020-11-14 22:38:13.344 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
-2020-11-14 22:38:13.357 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
-2020-11-14 22:38:13.379 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
-2020-11-14 22:38:13.381 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
-2020-11-14 22:38:13.393 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
-2020-11-14 22:38:14.822 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
-2020-11-14 22:38:14.824 INFO  com.sise.business.BusinessApplication             :61   [32m        [0;39m Started BusinessApplication in 13.499 seconds (JVM running for 14.777)
-2020-11-14 22:38:14.826 INFO  com.sise.business.BusinessApplication             :25   [32m        [0;39m 启动成功！！
-2020-11-14 22:38:14.826 INFO  com.sise.business.BusinessApplication             :26   [32m        [0;39m Business地址: 	http://127.0.0.1:9002
-2020-11-14 22:38:41.881 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-11-14 22:38:41.882 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
-2020-11-14 22:38:41.889 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 7 ms
-2020-11-14 22:38:41.984 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-1 - Starting...
-2020-11-14 22:38:42.541 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-1 - Start completed.
-2020-11-14 22:38:42.591 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2020-11-14 22:38:42.606 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
-2020-11-14 22:38:42.733 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
-2020-11-14 22:38:42.733 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
-2020-11-14 22:38:42.735 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
-2020-11-14 22:38:42.738 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
-2020-11-14 22:38:42.739 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
-2020-11-14 22:38:42.742 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
-2020-11-14 22:38:42.742 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
-2020-11-14 22:38:42.743 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
-2020-11-14 22:38:42.744 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
-2020-11-14 22:38:42.744 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
-2020-11-14 22:38:42.744 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
-2020-11-14 22:38:42.745 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
-2020-11-14 22:38:48.135 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2020-11-14 22:38:48.136 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
-2020-11-14 22:38:48.137 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
-2020-11-14 22:38:48.138 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
-2020-11-14 22:38:48.138 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
-2020-11-14 22:38:48.140 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
-2020-11-14 22:38:48.140 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
-2020-11-14 22:38:48.141 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
-2020-11-14 22:38:48.141 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
-2020-11-14 22:38:48.142 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
-2020-11-14 22:38:48.142 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
-2020-11-14 22:38:48.143 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
-2020-11-14 22:38:48.143 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
-2020-11-14 22:38:48.143 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
-2020-11-14 22:38:51.847 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2020-11-14 22:38:51.847 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
-2020-11-14 22:38:51.848 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
-2020-11-14 22:38:51.848 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
-2020-11-14 22:38:51.849 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
-2020-11-14 22:38:51.849 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
-2020-11-14 22:38:51.850 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
-2020-11-14 22:38:51.850 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
-2020-11-14 22:38:51.851 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
-2020-11-14 22:38:51.851 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
-2020-11-14 22:38:51.851 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
-2020-11-14 22:38:51.851 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
-2020-11-14 22:38:51.852 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
-2020-11-14 22:38:51.852 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
-2020-11-14 22:38:53.466 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2020-11-14 22:38:53.467 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
-2020-11-14 22:38:53.468 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
-2020-11-14 22:38:53.468 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
-2020-11-14 22:38:53.468 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
-2020-11-14 22:38:53.469 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
-2020-11-14 22:38:53.469 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
-2020-11-14 22:38:53.470 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
-2020-11-14 22:38:53.470 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
-2020-11-14 22:38:53.472 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
-2020-11-14 22:38:53.472 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
-2020-11-14 22:38:53.473 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
-2020-11-14 22:38:53.473 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
-2020-11-14 22:38:53.473 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
-2020-11-14 22:38:58.870 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2020-11-14 22:38:58.870 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
-2020-11-14 22:38:58.871 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
-2020-11-14 22:38:58.872 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
-2020-11-14 22:38:58.872 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
-2020-11-14 22:38:58.872 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
-2020-11-14 22:38:58.873 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
-2020-11-14 22:38:58.874 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
-2020-11-14 22:38:58.874 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
-2020-11-14 22:38:58.874 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
-2020-11-14 22:38:58.875 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
-2020-11-14 22:38:58.875 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
-2020-11-14 22:38:58.875 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
-2020-11-14 22:38:58.876 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
-2020-11-14 22:39:25.968 DEBUG com.sise.business.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==>  Preparing: insert into chapter (id, course_id, `name`) values (?, ?, ?) 
-2020-11-14 22:39:25.969 DEBUG com.sise.business.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==> Parameters: bqnrlXfR(String), 00000000(String), 第一章(String)
-2020-11-14 22:39:26.129 DEBUG com.sise.business.mapper.ChapterMapper.insert     :159  [32m        [0;39m <==    Updates: 1
-2020-11-14 22:39:26.144 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2020-11-14 22:39:26.144 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
-2020-11-14 22:39:26.145 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
-2020-11-14 22:39:26.145 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 23
-2020-11-14 22:39:26.146 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
-2020-11-14 22:39:26.146 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
-2020-11-14 22:39:26.147 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
-2020-11-14 22:39:26.153 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
-2020-11-14 22:39:26.153 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
-2020-11-14 22:39:26.154 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
-2020-11-14 22:39:26.154 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
-2020-11-14 22:39:26.154 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
-2020-11-14 22:39:26.155 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
-2020-11-14 22:39:26.155 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
-2020-11-14 22:39:31.042 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2020-11-14 22:39:31.043 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
-2020-11-14 22:39:31.044 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
-2020-11-14 22:39:31.044 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 23
-2020-11-14 22:39:31.044 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
-2020-11-14 22:39:31.045 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
-2020-11-14 22:39:31.045 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
-2020-11-14 22:39:31.047 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
-2020-11-14 22:39:31.047 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000020, 00000000, 测试大章20
-2020-11-14 22:39:31.048 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000021, 00000000, 测试大章21
-2020-11-14 22:39:31.048 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: bqnrlXfR, 00000000, 第一章
-2020-11-14 22:39:31.048 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 3
-2020-11-14 22:40:05.934 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2020-11-14 22:40:05.934 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
-2020-11-14 22:40:05.935 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
-2020-11-14 22:40:05.936 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 23
-2020-11-14 22:40:05.936 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
-2020-11-14 22:40:05.937 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
-2020-11-14 22:40:05.938 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
-2020-11-14 22:40:05.939 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
-2020-11-14 22:40:05.940 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
-2020-11-14 22:40:05.940 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
-2020-11-14 22:40:05.941 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
-2020-11-14 22:40:05.941 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
-2020-11-14 22:40:05.942 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
-2020-11-14 22:40:05.942 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
-2020-11-14 22:40:08.520 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
-2020-11-14 22:40:08.521 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
-2020-11-14 22:40:08.522 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
-2020-11-14 22:40:08.523 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 23
-2020-11-14 22:40:08.523 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
-2020-11-14 22:40:08.524 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
-2020-11-14 22:40:08.525 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
-2020-11-14 22:40:08.526 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
-2020-11-14 22:40:08.526 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000020, 00000000, 测试大章20
-2020-11-14 22:40:08.526 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000021, 00000000, 测试大章21
-2020-11-14 22:40:08.527 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: bqnrlXfR, 00000000, 第一章
-2020-11-14 22:40:08.527 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 3
+2020-11-15 00:01:04.219 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-11-15 00:01:04.221 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605369664221, current=DOWN, previous=UP]
+2020-11-15 00:01:04.221 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-15 00:01:04.223 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-15 00:01:04.224 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-11-15 00:01:04.236 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-15 00:01:04.236 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-11-15 00:01:04.250 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - deregister  status: 200
+2020-11-15 00:01:04.254 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-11-15 00:01:07.480 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:09.099 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-15 00:01:09.615 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=e48fbc11-f964-302b-885c-f8ceb9e213c7
+2020-11-15 00:01:09.637 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:09.645 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:09.767 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-11-15 00:01:10.157 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-15 00:01:10.160 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-15 00:01:10.161 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-15 00:01:10.161 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 00:01:10.189 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-15 00:01:10.190 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1087 ms
+2020-11-15 00:01:10.322 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-15 00:01:10.322 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-15 00:01:10.620 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-15 00:01:10.849 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2020-11-15 00:01:12.514 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:01:14.159 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:01:15.705 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:01:15.718 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-15 00:01:15.743 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-11-15 00:01:15.797 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-15 00:01:15.800 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-15 00:01:15.802 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-15 00:01:15.803 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-15 00:01:15.803 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-15 00:01:15.803 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-15 00:01:15.873 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-15 00:01:15.874 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-11-15 00:01:15.874 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-11-15 00:01:15.874 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-11-15 00:01:15.874 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-11-15 00:01:15.874 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-11-15 00:01:15.875 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-11-15 00:01:15.875 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-15 00:01:15.879 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-11-15 00:01:15.880 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-15 00:01:15.880 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-15 00:01:15.882 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1605369675882 with initial instances count: 2
+2020-11-15 00:01:15.884 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-15 00:01:15.884 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605369675884, current=UP, previous=STARTING]
+2020-11-15 00:01:15.884 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-15 00:01:15.891 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-15 00:01:15.899 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-15 00:01:15.900 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-15 00:01:15.900 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-15 00:01:18.209 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:01:18.248 INFO  com.sise.business.BusinessApplication             :61   [32m        [0;39m Started BusinessApplication in 13.429 seconds (JVM running for 4998.202)
+2020-11-15 00:01:18.252 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-11-15 00:01:18.253 INFO  com.sise.business.BusinessApplication             :25   [32m        [0;39m 启动成功！！
+2020-11-15 00:01:18.255 INFO  com.sise.business.BusinessApplication             :26   [32m        [0;39m Business地址: 	http://127.0.0.1:9002
+2020-11-15 00:01:19.558 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-11-15 00:01:19.559 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605369679559, current=DOWN, previous=UP]
+2020-11-15 00:01:19.559 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-15 00:01:19.561 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-15 00:01:19.561 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-11-15 00:01:19.574 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-15 00:01:19.575 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-11-15 00:01:19.587 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - deregister  status: 200
+2020-11-15 00:01:19.590 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-11-15 00:01:22.303 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:24.076 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-15 00:01:24.487 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ecb282a1-22db-3a2a-9bb0-91e00d3065c6
+2020-11-15 00:01:24.512 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:24.516 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:24.595 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-11-15 00:01:24.649 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-15 00:01:24.649 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-15 00:01:24.650 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-15 00:01:24.650 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 00:01:24.667 INFO  o.a.c.c.C.[Tomcat-2].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-15 00:01:24.667 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 581 ms
+2020-11-15 00:01:24.688 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chapterController' defined in file [D:\Workspaces\IDEA\course\business\target\classes\com\sise\business\controller\admin\ChapterController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sise.business.controller.admin.ChapterController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1771e062]
+2020-11-15 00:01:24.688 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Stopping service [Tomcat]
+2020-11-15 00:01:24.695 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m        [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-15 00:01:24.695 ERROR org.springframework.boot.SpringApplication        :826  [32m        [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chapterController' defined in file [D:\Workspaces\IDEA\course\business\target\classes\com\sise\business\controller\admin\ChapterController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sise.business.controller.admin.ChapterController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1771e062]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at com.sise.business.BusinessApplication.main(BusinessApplication.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.sise.business.controller.admin.ChapterController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@1771e062]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:382)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:363)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/sise/business/service/ChapterService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.sise.business.service.ChapterService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2020-11-15 00:01:31.159 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:32.717 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-15 00:01:33.045 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ecb282a1-22db-3a2a-9bb0-91e00d3065c6
+2020-11-15 00:01:33.057 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:33.060 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:33.084 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-11-15 00:01:33.480 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-15 00:01:33.481 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-15 00:01:33.486 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-15 00:01:33.486 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 00:01:33.510 INFO  o.a.c.c.C.[Tomcat-3].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-15 00:01:33.510 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 791 ms
+2020-11-15 00:01:33.567 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chapterController' defined in file [D:\Workspaces\IDEA\course\business\target\classes\com\sise\business\controller\admin\ChapterController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sise.business.controller.admin.ChapterController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@11a45d3f]
+2020-11-15 00:01:33.568 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Stopping service [Tomcat]
+2020-11-15 00:01:33.578 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m        [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-15 00:01:33.581 ERROR org.springframework.boot.SpringApplication        :826  [32m        [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chapterController' defined in file [D:\Workspaces\IDEA\course\business\target\classes\com\sise\business\controller\admin\ChapterController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sise.business.controller.admin.ChapterController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@11a45d3f]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at com.sise.business.BusinessApplication.main(BusinessApplication.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.sise.business.controller.admin.ChapterController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@11a45d3f]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:382)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:363)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/sise/business/service/ChapterService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.sise.business.service.ChapterService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2020-11-15 00:01:38.189 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:39.710 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-15 00:01:39.933 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=ecb282a1-22db-3a2a-9bb0-91e00d3065c6
+2020-11-15 00:01:39.953 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:39.956 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:39.980 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-11-15 00:01:40.032 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-15 00:01:40.032 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-15 00:01:40.033 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-15 00:01:40.033 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 00:01:40.046 INFO  o.a.c.c.C.[Tomcat-4].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-15 00:01:40.046 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 335 ms
+2020-11-15 00:01:40.056 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:558  [32m        [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chapterController' defined in file [D:\Workspaces\IDEA\course\business\target\classes\com\sise\business\controller\admin\ChapterController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sise.business.controller.admin.ChapterController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@66ae33e]
+2020-11-15 00:01:40.057 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Stopping service [Tomcat]
+2020-11-15 00:01:40.070 INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener:136  [32m        [0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-15 00:01:40.070 ERROR org.springframework.boot.SpringApplication        :826  [32m        [0;39m Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'chapterController' defined in file [D:\Workspaces\IDEA\course\business\target\classes\com\sise\business\controller\admin\ChapterController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.sise.business.controller.admin.ChapterController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@66ae33e]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:572)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at com.sise.business.BusinessApplication.main(BusinessApplication.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.sise.business.controller.admin.ChapterController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@66ae33e]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734)
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:666)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:382)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:363)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:311)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1094)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569)
+	... 18 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/sise/business/service/ChapterService;
+	at java.lang.Class.getDeclaredFields0(Native Method)
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583)
+	at java.lang.Class.getDeclaredFields(Class.java:1916)
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:729)
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.sise.business.service.ChapterService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 28 common frames omitted
+2020-11-15 00:01:53.352 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:54.921 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-15 00:01:55.199 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b9a28b63-9f0b-32a3-ae3c-528054650cc2
+2020-11-15 00:01:55.213 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:55.216 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:01:55.248 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-11-15 00:01:55.311 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-15 00:01:55.312 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-15 00:01:55.312 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-15 00:01:55.312 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 00:01:55.326 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-15 00:01:55.326 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 402 ms
+2020-11-15 00:01:55.402 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-15 00:01:55.402 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-15 00:01:55.476 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-15 00:01:55.597 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2020-11-15 00:01:57.556 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:01:59.232 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:02:01.069 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:02:01.082 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-15 00:02:01.096 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-11-15 00:02:01.125 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-15 00:02:01.127 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-15 00:02:01.134 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-15 00:02:01.135 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-15 00:02:01.135 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-15 00:02:01.135 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-15 00:02:01.201 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-15 00:02:01.205 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-11-15 00:02:01.206 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-11-15 00:02:01.206 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-11-15 00:02:01.206 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-11-15 00:02:01.206 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-11-15 00:02:01.206 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-11-15 00:02:01.207 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-15 00:02:01.209 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-11-15 00:02:01.210 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-15 00:02:01.211 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-15 00:02:01.212 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1605369721212 with initial instances count: 1
+2020-11-15 00:02:01.213 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-15 00:02:01.213 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605369721213, current=UP, previous=STARTING]
+2020-11-15 00:02:01.215 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-15 00:02:01.220 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-15 00:02:01.223 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-15 00:02:01.223 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-15 00:02:01.232 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-15 00:02:02.820 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:02:02.820 INFO  com.sise.business.BusinessApplication             :61   [32m        [0;39m Started BusinessApplication in 12.205 seconds (JVM running for 5042.774)
+2020-11-15 00:02:02.822 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-11-15 00:02:02.823 INFO  com.sise.business.BusinessApplication             :25   [32m        [0;39m 启动成功！！
+2020-11-15 00:02:02.823 INFO  com.sise.business.BusinessApplication             :26   [32m        [0;39m Business地址: 	http://127.0.0.1:9002
+2020-11-15 00:02:17.412 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :65   [32m        [0;39m Unregistering application BUSINESS with eureka with status DOWN
+2020-11-15 00:02:17.412 WARN  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605369737412, current=DOWN, previous=UP]
+2020-11-15 00:02:17.413 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-15 00:02:17.414 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :208  [32m        [0;39m Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-15 00:02:17.415 INFO  com.netflix.discovery.DiscoveryClient             :906  [32m        [0;39m Shutting down DiscoveryClient ...
+2020-11-15 00:02:17.431 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-15 00:02:17.432 INFO  com.netflix.discovery.DiscoveryClient             :940  [32m        [0;39m Unregistering ...
+2020-11-15 00:02:17.437 INFO  com.netflix.discovery.DiscoveryClient             :942  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - deregister  status: 200
+2020-11-15 00:02:17.441 INFO  com.netflix.discovery.DiscoveryClient             :929  [32m        [0;39m Completed shut down of DiscoveryClient
+2020-11-15 00:02:19.641 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:02:21.310 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-15 00:02:21.562 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=b9a28b63-9f0b-32a3-ae3c-528054650cc2
+2020-11-15 00:02:21.576 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:02:21.579 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-15 00:02:21.616 WARN  org.apache.tomcat.util.modeler.Registry           :173  [32m        [0;39m The MBean registry cannot be disabled because it has already been initialised
+2020-11-15 00:02:21.681 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-15 00:02:21.681 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-15 00:02:21.681 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-15 00:02:21.682 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-15 00:02:21.696 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-15 00:02:21.696 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 384 ms
+2020-11-15 00:02:21.756 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-15 00:02:21.756 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-15 00:02:21.808 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-15 00:02:21.891 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2020-11-15 00:02:23.392 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:02:24.894 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:02:26.401 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:02:26.407 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-15 00:02:26.413 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-11-15 00:02:26.433 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-15 00:02:26.435 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-15 00:02:26.436 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-15 00:02:26.436 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-15 00:02:26.436 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-15 00:02:26.437 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-15 00:02:26.489 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-15 00:02:26.490 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-11-15 00:02:26.490 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-11-15 00:02:26.490 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-11-15 00:02:26.491 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-11-15 00:02:26.491 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-11-15 00:02:26.491 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-11-15 00:02:26.491 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-15 00:02:26.494 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-11-15 00:02:26.494 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-15 00:02:26.495 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-15 00:02:26.496 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1605369746496 with initial instances count: 2
+2020-11-15 00:02:26.497 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-15 00:02:26.497 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1605369746497, current=UP, previous=STARTING]
+2020-11-15 00:02:26.498 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-15 00:02:26.508 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-15 00:02:26.511 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-15 00:02:26.511 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-15 00:02:26.512 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-15 00:02:28.002 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-15 00:02:28.002 INFO  com.sise.business.BusinessApplication             :61   [32m        [0;39m Started BusinessApplication in 10.02 seconds (JVM running for 5067.956)
+2020-11-15 00:02:28.004 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2020-11-15 00:02:28.004 INFO  com.sise.business.BusinessApplication             :25   [32m        [0;39m 启动成功！！
+2020-11-15 00:02:28.004 INFO  com.sise.business.BusinessApplication             :26   [32m        [0;39m Business地址: 	http://127.0.0.1:9002
+2020-11-15 00:02:47.839 INFO  o.a.c.c.C.[Tomcat-5].[localhost].[/business]      :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-15 00:02:47.839 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-15 00:02:47.843 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 4 ms
+2020-11-15 00:02:47.853 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-4 - Starting...
+2020-11-15 00:02:47.859 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-4 - Start completed.
+2020-11-15 00:02:47.860 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-15 00:02:47.860 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-15 00:02:47.868 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-15 00:02:47.869 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 24
+2020-11-15 00:02:47.869 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-15 00:02:47.870 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-15 00:02:47.871 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-15 00:02:47.871 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-15 00:02:47.872 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-15 00:02:47.872 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-15 00:02:47.872 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-15 00:02:47.872 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-15 00:02:47.873 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-15 00:02:47.873 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-15 00:02:50.056 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-15 00:02:50.057 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-15 00:02:50.058 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-15 00:02:50.058 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 24
+2020-11-15 00:02:50.058 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-15 00:02:50.059 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-15 00:02:50.059 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
+2020-11-15 00:02:50.060 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-15 00:02:50.060 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000020, 00000000, 测试大章20
+2020-11-15 00:02:50.060 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000021, 00000000, 测试大章21
+2020-11-15 00:02:50.061 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: bqnrlXfR, 00000000, 第一章
+2020-11-15 00:02:50.061 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: gQNkGI0n, 00000000, 第二章
+2020-11-15 00:02:50.062 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 4
+2020-11-15 00:02:52.589 DEBUG c.s.b.mapper.ChapterMapper.deleteByPrimaryKey     :159  [32m        [0;39m ==>  Preparing: delete from chapter where id = ? 
+2020-11-15 00:02:52.590 DEBUG c.s.b.mapper.ChapterMapper.deleteByPrimaryKey     :159  [32m        [0;39m ==> Parameters: bqnrlXfR(String)
+2020-11-15 00:02:52.690 DEBUG c.s.b.mapper.ChapterMapper.deleteByPrimaryKey     :159  [32m        [0;39m <==    Updates: 1
+2020-11-15 00:02:52.702 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-15 00:02:52.702 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-15 00:02:52.703 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-15 00:02:52.703 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 23
+2020-11-15 00:02:52.703 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-15 00:02:52.704 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-15 00:02:52.704 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-15 00:02:52.704 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-15 00:02:52.705 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-15 00:02:52.705 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-15 00:02:52.705 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-15 00:02:52.705 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-15 00:02:52.705 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-15 00:02:52.705 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-15 00:02:54.682 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-15 00:02:54.683 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-15 00:02:54.683 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-15 00:02:54.684 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 23
+2020-11-15 00:02:54.684 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-15 00:02:54.685 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-15 00:02:54.685 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
+2020-11-15 00:02:54.685 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-15 00:02:54.686 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000020, 00000000, 测试大章20
+2020-11-15 00:02:54.686 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000021, 00000000, 测试大章21
+2020-11-15 00:02:54.687 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: gQNkGI0n, 00000000, 第二章
+2020-11-15 00:02:54.688 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 3
+2020-11-15 00:02:58.429 DEBUG c.s.b.mapper.ChapterMapper.deleteByPrimaryKey     :159  [32m        [0;39m ==>  Preparing: delete from chapter where id = ? 
+2020-11-15 00:02:58.429 DEBUG c.s.b.mapper.ChapterMapper.deleteByPrimaryKey     :159  [32m        [0;39m ==> Parameters: gQNkGI0n(String)
+2020-11-15 00:02:58.485 DEBUG c.s.b.mapper.ChapterMapper.deleteByPrimaryKey     :159  [32m        [0;39m <==    Updates: 1
+2020-11-15 00:02:58.496 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-15 00:02:58.497 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-15 00:02:58.498 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-15 00:02:58.498 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-15 00:02:58.498 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-15 00:02:58.498 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-15 00:02:58.498 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-15 00:02:58.499 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-15 00:02:58.499 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-15 00:02:58.499 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-15 00:02:58.500 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-15 00:02:58.500 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-15 00:02:58.500 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-15 00:02:58.500 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-15 00:02:59.662 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-15 00:02:59.663 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-15 00:02:59.664 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-15 00:02:59.664 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 22
+2020-11-15 00:02:59.664 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-15 00:02:59.665 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-15 00:02:59.665 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
+2020-11-15 00:02:59.666 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-15 00:02:59.666 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000020, 00000000, 测试大章20
+2020-11-15 00:02:59.666 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000021, 00000000, 测试大章21
+2020-11-15 00:02:59.666 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-15 00:03:15.693 DEBUG com.sise.business.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==>  Preparing: insert into chapter (id, course_id, `name`) values (?, ?, ?) 
+2020-11-15 00:03:15.694 DEBUG com.sise.business.mapper.ChapterMapper.insert     :159  [32m        [0;39m ==> Parameters: QRwde0i7(String), 00000000(String), 大章一(String)
+2020-11-15 00:03:15.772 DEBUG com.sise.business.mapper.ChapterMapper.insert     :159  [32m        [0;39m <==    Updates: 1
+2020-11-15 00:03:15.786 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-15 00:03:15.787 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-15 00:03:15.788 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-15 00:03:15.788 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 23
+2020-11-15 00:03:15.788 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-15 00:03:15.789 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-15 00:03:15.790 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-15 00:03:15.791 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-15 00:03:15.792 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-15 00:03:15.792 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-15 00:03:15.792 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-15 00:03:15.792 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-15 00:03:15.792 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-15 00:03:15.793 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 5
+2020-11-15 00:03:17.890 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-15 00:03:17.890 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-15 00:03:17.891 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-15 00:03:17.891 TRACE c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 23
+2020-11-15 00:03:17.892 DEBUG c.s.b.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-15 00:03:17.892 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ?, ? 
+2020-11-15 00:03:17.893 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 20(Integer), 5(Integer)
+2020-11-15 00:03:17.894 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-15 00:03:17.894 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000020, 00000000, 测试大章20
+2020-11-15 00:03:17.894 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000021, 00000000, 测试大章21
+2020-11-15 00:03:17.894 TRACE c.s.business.mapper.ChapterMapper.selectByExample :165  [32m        [0;39m <==        Row: QRwde0i7, 00000000, 大章一
+2020-11-15 00:03:17.895 DEBUG c.s.business.mapper.ChapterMapper.selectByExample :159  [32m        [0;39m <==      Total: 3
