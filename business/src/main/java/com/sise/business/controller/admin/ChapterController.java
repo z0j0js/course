@@ -1,10 +1,10 @@
 package com.sise.business.controller.admin;
 
-import com.sise.business.dto.ChapterDto;
-import com.sise.business.dto.PageDto;
-import com.sise.business.dto.ResponseDto;
-import com.sise.business.service.ChapterService;
-import com.sise.business.util.ValidatorUtil;
+import com.sise.server.dto.ChapterDto;
+import com.sise.server.dto.PageDto;
+import com.sise.server.dto.ResponseDto;
+import com.sise.server.service.ChapterService;
+import com.sise.server.util.ValidatorUtil;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -12,6 +12,8 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/admin/chapter")
 public class ChapterController {
+
+    public static final String BUSINESS_NAME = "大章";
 
     @Resource
     private ChapterService chapterService;

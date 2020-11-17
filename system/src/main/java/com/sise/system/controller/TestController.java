@@ -1,7 +1,7 @@
 package com.sise.system.controller;
 
-import com.sise.system.domain.Test;
-import com.sise.system.service.TestService;
+import com.sise.server.domain.Test;
+import com.sise.server.service.TestService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

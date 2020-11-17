@@ -1,8 +1,8 @@
 package com.sise.business.controller;
 
-import com.sise.business.dto.ResponseDto;
-import com.sise.business.exception.BusinessException;
-import com.sise.business.exception.ValidatorException;
+import com.sise.server.dto.ResponseDto;
+import com.sise.server.exception.BusinessException;
+import com.sise.server.exception.ValidatorException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.ControllerAdvice;

@@ -1,4 +1,4 @@
-package com.sise.business;
+package com.sise.system.config;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
@@ -13,19 +13,19 @@ import org.springframework.core.env.Environment;
 @EnableEurekaClient
 @ComponentScan("com.sise")
 @MapperScan("com.sise.server.mapper")
-public class BusinessApplication {
+public class SystemApplication {
 
-    private static final Logger LOG = LoggerFactory.getLogger(BusinessApplication.class);
+    private static final Logger LOG = LoggerFactory.getLogger(SystemApplication.class);
 
 //	public static void main(String[] args) {
 //		SpringApplication.run(EurekaApplication.class, args);
 //	}
 
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(BusinessApplication.class);
+        SpringApplication app = new SpringApplication(SystemApplication.class);
         Environment env = app.run(args).getEnvironment();
         LOG.info("启动成功！！");
-        LOG.info("Business地址: \thttp://127.0.0.1:{}", env.getProperty("server.port"));
+        LOG.info("System地址: \thttp://127.0.0.1:{}", env.getProperty("server.port"));
     }
 
 }
