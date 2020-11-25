@@ -5,16 +5,14 @@ import com.github.pagehelper.PageInfo;
 import com.sise.server.domain.Chapter;
 import com.sise.server.domain.ChapterExample;
 import com.sise.server.dto.ChapterDto;
-import com.sise.server.dto.PageDto;
+import com.sise.server.dto.ChapterPageDto;
 import com.sise.server.mapper.ChapterMapper;
 import com.sise.server.util.CopyUtil;
 import com.sise.server.util.UuidUtil;
-import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -26,20 +24,18 @@ public class ChapterService {
     /**
      * 列表查询
      */
-    public void list(PageDto pageDto) {
-        PageHelper.startPage(pageDto.getPage(),pageDto.getSize());
+    public void list(ChapterPageDto chapterPageDto) {
+        PageHelper.startPage(chapterPageDto.getPage(),chapterPageDto.getSize());
         ChapterExample chapterExample = new ChapterExample();
+        ChapterExample.Criteria criteria = chapterExample.createCriteria();
+        if (!StringUtils.isEmpty(chapterPageDto.getCourseId())){
+            criteria.andCourseIdEqualTo(chapterPageDto.getCourseId());
+        }
         List<Chapter> chapterList = chapterMapper.selectByExample(chapterExample);
         PageInfo<Chapter> pageInfo = new PageInfo<>(chapterList);
-        pageDto.setTotal(pageInfo.getTotal());
-        List<ChapterDto> chapterDtoList = new ArrayList<ChapterDto>();
-        for (int i = 0; i < chapterList.size(); i++) {
-            Chapter chapter = chapterList.get(i);
-            ChapterDto chapterDto = new ChapterDto();
-            BeanUtils.copyProperties(chapter, chapterDto);
-            chapterDtoList.add(chapterDto);
-        }
-        pageDto.setList(chapterDtoList);
+        chapterPageDto.setTotal(pageInfo.getTotal());
+        List<ChapterDto> chapterDtoList = CopyUtil.copyList(chapterList, ChapterDto.class);
+        chapterPageDto.setList(chapterDtoList);
     }
 
     /**

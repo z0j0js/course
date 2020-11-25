@@ -1,7 +1,7 @@
 package com.sise.business.controller.admin;
 
 import com.sise.server.dto.ChapterDto;
-import com.sise.server.dto.PageDto;
+import com.sise.server.dto.ChapterPageDto;
 import com.sise.server.dto.ResponseDto;
 import com.sise.server.service.ChapterService;
 import com.sise.server.util.ValidatorUtil;
@@ -22,10 +22,11 @@ public class ChapterController {
      * 列表查询
      */
     @PostMapping("/list")
-    public ResponseDto list(@RequestBody PageDto pageDto){
+    public ResponseDto list(@RequestBody ChapterPageDto chapterPageDto){
         ResponseDto responseDto = new ResponseDto();
-        chapterService.list(pageDto);
-        responseDto.setContent(pageDto);
+        ValidatorUtil.require(chapterPageDto.getCourseId(), "课程ID");
+        chapterService.list(chapterPageDto);
+        responseDto.setContent(chapterPageDto);
         return responseDto;
     }
 

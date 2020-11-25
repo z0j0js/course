@@ -1,0 +1,348 @@
+2020-11-23 21:16:08.028 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-23 21:16:08.184 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-23 21:16:09.851 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-23 21:16:11.082 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=479db631-ea12-368e-afa3-1e519916a92e
+2020-11-23 21:16:11.174 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-23 21:16:11.200 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-23 21:16:11.564 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-23 21:16:11.573 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-23 21:16:11.574 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-23 21:16:11.575 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-23 21:16:11.683 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-23 21:16:11.683 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1803 ms
+2020-11-23 21:16:12.545 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-23 21:16:12.545 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 21:16:12.548 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-23 21:16:12.548 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 21:16:12.675 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-23 21:16:12.988 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2020-11-23 21:16:14.486 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-23 21:16:15.989 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-23 21:16:17.475 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-23 21:16:17.495 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-23 21:16:17.528 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-11-23 21:16:17.594 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-23 21:16:17.621 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-23 21:16:18.006 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-23 21:16:18.007 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-23 21:16:18.103 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-23 21:16:18.104 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-23 21:16:18.467 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-23 21:16:18.710 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-11-23 21:16:18.710 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-11-23 21:16:18.710 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-11-23 21:16:18.711 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-11-23 21:16:18.711 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-11-23 21:16:18.711 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-11-23 21:16:18.712 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-23 21:16:18.828 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-11-23 21:16:18.831 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-23 21:16:18.832 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-23 21:16:18.836 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1606137378835 with initial instances count: 1
+2020-11-23 21:16:18.837 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-23 21:16:18.838 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1606137378838, current=UP, previous=STARTING]
+2020-11-23 21:16:18.841 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-23 21:16:18.855 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-23 21:16:18.878 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-23 21:16:18.879 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-23 21:16:18.880 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-23 21:16:20.353 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-23 21:16:20.355 INFO  com.sise.business.BusinessApplication             :61   [32m        [0;39m Started BusinessApplication in 14.695 seconds (JVM running for 16.01)
+2020-11-23 21:16:20.357 INFO  com.sise.business.BusinessApplication             :27   [32m        [0;39m 启动成功！！
+2020-11-23 21:16:20.357 INFO  com.sise.business.BusinessApplication             :28   [32m        [0;39m Business地址: 	http://127.0.0.1:9002
+2020-11-23 21:18:51.937 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-23 21:18:51.938 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-23 21:18:51.946 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 8 ms
+2020-11-23 21:18:52.109 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-1 - Starting...
+2020-11-23 21:18:52.300 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-1 - Start completed.
+2020-11-23 21:18:52.384 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-23 21:18:52.399 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:18:52.496 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:18:52.497 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 20
+2020-11-23 21:18:52.498 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:18:52.501 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-23 21:18:52.501 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:18:52.503 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-23 21:18:52.503 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-23 21:18:52.504 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-23 21:18:52.504 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-23 21:18:52.505 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-23 21:18:52.505 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-23 21:18:52.505 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2020-11-23 21:18:54.989 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-23 21:18:54.990 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:18:55.048 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:18:55.048 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2020-11-23 21:18:55.052 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:18:55.055 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-23 21:18:55.055 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:18:55.057 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-23 21:18:55.058 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, F, 1, 2020-11-15 16:12:58.0, 2020-11-15 16:12:58.0
+2020-11-23 21:18:55.063 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:19:01.667 DEBUG c.s.server.mapper.SectionMapper.updateByPrimaryKey:159  [32m        [0;39m ==>  Preparing: update section set title = ?, course_id = ?, chapter_id = ?, video = ?, `time` = ?, charge = ?, sort = ?, created_at = ?, updated_at = ? where id = ? 
+2020-11-23 21:19:01.669 DEBUG c.s.server.mapper.SectionMapper.updateByPrimaryKey:159  [32m        [0;39m ==> Parameters: 测试小节01(String), 00000001(String), 00000000(String), (String), 500(Integer), C(String), 1(Integer), 2020-11-15 16:12:58.0(Timestamp), 2020-11-23 21:19:01.666(Timestamp), 00000001(String)
+2020-11-23 21:19:01.803 DEBUG c.s.server.mapper.SectionMapper.updateByPrimaryKey:159  [32m        [0;39m <==    Updates: 1
+2020-11-23 21:19:01.922 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-23 21:19:01.922 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:19:01.923 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:19:01.923 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 1
+2020-11-23 21:19:01.924 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:19:01.924 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-23 21:19:01.925 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:19:01.927 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-23 21:19:01.927 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2020-11-15 16:12:58.0, 2020-11-23 21:19:01.666
+2020-11-23 21:19:01.928 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:20:04.874 DEBUG com.sise.server.mapper.SectionMapper.insert       :159  [32m        [0;39m ==>  Preparing: insert into section (id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-11-23 21:20:04.875 DEBUG com.sise.server.mapper.SectionMapper.insert       :159  [32m        [0;39m ==> Parameters: 9yqWvDER(String), 测试小节02(String), 00000002(String), 00000000(String), null, null, F(String), 2(Integer), 2020-11-23 21:20:04.872(Timestamp), 2020-11-23 21:20:04.872(Timestamp)
+2020-11-23 21:20:05.010 DEBUG com.sise.server.mapper.SectionMapper.insert       :159  [32m        [0;39m <==    Updates: 1
+2020-11-23 21:20:05.057 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-23 21:20:05.058 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:20:05.059 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:20:05.059 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-23 21:20:05.059 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:20:05.060 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-23 21:20:05.060 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:20:05.077 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-23 21:20:05.078 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2020-11-15 16:12:58.0, 2020-11-23 21:19:01.666
+2020-11-23 21:20:05.078 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 9yqWvDER, 测试小节02, 00000002, 00000000, null, null, F, 2, 2020-11-23 21:20:04.872, 2020-11-23 21:20:04.872
+2020-11-23 21:20:05.079 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2020-11-23 21:21:04.072 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-23 21:21:04.074 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:21:04.074 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:21:04.074 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-23 21:21:04.075 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:21:04.075 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-23 21:21:04.075 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-23 21:21:04.081 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-23 21:21:04.081 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2020-11-15 16:12:58.0, 2020-11-23 21:19:01.666
+2020-11-23 21:21:04.081 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:21:08.627 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-23 21:21:08.628 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:21:08.629 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:21:08.629 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 20
+2020-11-23 21:21:08.630 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:21:08.630 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-23 21:21:08.630 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:21:08.631 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-23 21:21:08.631 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-23 21:21:08.633 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-23 21:21:08.633 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-23 21:21:08.633 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-23 21:21:08.633 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-23 21:21:08.634 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2020-11-23 21:21:18.723 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-23 21:26:18.729 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-23 21:41:36.057 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-23 21:41:36.195 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-23 21:41:37.781 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-23 21:41:38.728 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=479db631-ea12-368e-afa3-1e519916a92e
+2020-11-23 21:41:38.864 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-23 21:41:38.894 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-23 21:41:39.351 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-23 21:41:39.361 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-23 21:41:39.362 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-23 21:41:39.362 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-23 21:41:39.480 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-23 21:41:39.480 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1682 ms
+2020-11-23 21:41:39.856 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-23 21:41:39.857 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 21:41:39.860 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-23 21:41:39.860 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-23 21:41:39.979 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-23 21:41:40.215 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2020-11-23 21:41:41.680 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-23 21:41:43.151 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-23 21:41:44.628 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-23 21:41:44.647 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-23 21:41:44.675 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-11-23 21:41:44.734 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-23 21:41:44.759 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-23 21:41:45.135 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-23 21:41:45.136 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-23 21:41:45.228 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-23 21:41:45.229 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-23 21:41:45.451 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-23 21:41:45.683 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-11-23 21:41:45.683 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-11-23 21:41:45.684 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-11-23 21:41:45.684 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-11-23 21:41:45.684 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-11-23 21:41:45.684 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-11-23 21:41:45.684 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-23 21:41:45.796 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-11-23 21:41:45.798 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-23 21:41:45.800 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-23 21:41:45.803 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1606138905802 with initial instances count: 1
+2020-11-23 21:41:45.805 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-23 21:41:45.805 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1606138905805, current=UP, previous=STARTING]
+2020-11-23 21:41:45.809 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-23 21:41:45.823 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-23 21:41:45.847 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-23 21:41:45.847 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-23 21:41:45.848 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-23 21:41:47.303 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-23 21:41:47.304 INFO  com.sise.business.BusinessApplication             :61   [32m        [0;39m Started BusinessApplication in 13.592 seconds (JVM running for 14.868)
+2020-11-23 21:41:47.306 INFO  com.sise.business.BusinessApplication             :27   [32m        [0;39m 启动成功！！
+2020-11-23 21:41:47.306 INFO  com.sise.business.BusinessApplication             :28   [32m        [0;39m Business地址: 	http://127.0.0.1:9002
+2020-11-23 21:43:35.225 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-23 21:43:35.225 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-23 21:43:35.232 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 7 ms
+2020-11-23 21:43:35.319 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-1 - Starting...
+2020-11-23 21:43:35.493 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-1 - Start completed.
+2020-11-23 21:43:35.537 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-23 21:43:35.555 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:43:35.566 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:43:35.567 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-23 21:43:35.570 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:43:35.573 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-23 21:43:35.573 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:43:35.575 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-23 21:43:35.576 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-23 21:43:35.577 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:43:39.506 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-23 21:43:39.507 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:43:39.508 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:43:39.509 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 20
+2020-11-23 21:43:39.509 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:43:39.511 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-23 21:43:39.511 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:43:39.512 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-23 21:43:39.512 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-23 21:43:39.512 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-23 21:43:39.513 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-23 21:43:39.513 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-23 21:43:39.513 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-23 21:43:39.514 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2020-11-23 21:43:41.194 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-23 21:43:41.194 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:43:41.196 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:43:41.196 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-23 21:43:41.196 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:43:41.197 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-23 21:43:41.198 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:43:41.199 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-23 21:43:41.200 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2020-11-15 16:12:58.0, 2020-11-23 21:19:01.666
+2020-11-23 21:43:41.201 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 9yqWvDER, 测试小节02, 00000002, 00000000, null, null, F, 2, 2020-11-23 21:20:04.872, 2020-11-23 21:20:04.872
+2020-11-23 21:43:41.202 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2020-11-23 21:43:44.140 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-23 21:43:44.141 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:43:44.142 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:43:44.142 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-23 21:43:44.143 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:43:44.143 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-23 21:43:44.144 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:43:44.145 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-23 21:43:44.145 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-23 21:43:44.146 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:11.330 DEBUG com.sise.server.mapper.CourseMapper.insert        :159  [32m        [0;39m ==>  Preparing: insert into course (id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+2020-11-23 21:44:11.331 DEBUG com.sise.server.mapper.CourseMapper.insert        :159  [32m        [0;39m ==> Parameters: zDP79vT8(String), 测试课程02(String), null, null, null, null, 2(String), C(String), D(String), null, null, 2020-11-23 21:44:11.329(Timestamp), 2020-11-23 21:44:11.329(Timestamp), null
+2020-11-23 21:44:11.463 DEBUG com.sise.server.mapper.CourseMapper.insert        :159  [32m        [0;39m <==    Updates: 1
+2020-11-23 21:44:11.506 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-23 21:44:11.507 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:44:11.508 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:44:11.508 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-23 21:44:11.508 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:11.509 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-23 21:44:11.509 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:44:11.510 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-23 21:44:11.511 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: zDP79vT8, 测试课程02, null, null, null, null, 2, C, D, null, null, 2020-11-23 21:44:11.329, 2020-11-23 21:44:11.329, null
+2020-11-23 21:44:11.513 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-23 21:44:11.515 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-23 21:44:24.341 DEBUG c.s.server.mapper.CourseMapper.updateByPrimaryKey :159  [32m        [0;39m ==>  Preparing: update course set `name` = ?, summary = ?, `time` = ?, price = ?, image = ?, `level` = ?, charge = ?, `status` = ?, enroll = ?, sort = ?, created_at = ?, updated_at = ?, teacher_id = ? where id = ? 
+2020-11-23 21:44:24.342 DEBUG c.s.server.mapper.CourseMapper.updateByPrimaryKey :159  [32m        [0;39m ==> Parameters: 测试课程02(String), 哎呦(String), null, null, null, 2(String), C(String), D(String), null, null, 2020-11-23 21:44:11.0(Timestamp), 2020-11-23 21:44:24.339(Timestamp), null, zDP79vT8(String)
+2020-11-23 21:44:24.471 DEBUG c.s.server.mapper.CourseMapper.updateByPrimaryKey :159  [32m        [0;39m <==    Updates: 1
+2020-11-23 21:44:24.531 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-23 21:44:24.531 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:44:24.532 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:44:24.533 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-23 21:44:24.533 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:24.534 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-23 21:44:24.534 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:44:24.536 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-23 21:44:24.536 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: zDP79vT8, 测试课程02, 哎呦, null, null, null, 2, C, D, null, null, 2020-11-23 21:44:11.0, 2020-11-23 21:44:24.339, null
+2020-11-23 21:44:24.537 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-23 21:44:24.538 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-23 21:44:31.242 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-23 21:44:31.242 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:44:31.243 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:44:31.243 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-23 21:44:31.243 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:31.244 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-23 21:44:31.245 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:44:31.245 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-23 21:44:31.246 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: zDP79vT8, 测试课程02, 哎呦, null, null, null, 2, C, D, null, null, 2020-11-23 21:44:11.0, 2020-11-23 21:44:24.339, null
+2020-11-23 21:44:31.246 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-23 21:44:31.247 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-23 21:44:35.158 DEBUG c.s.server.mapper.CourseMapper.deleteByPrimaryKey :159  [32m        [0;39m ==>  Preparing: delete from course where id = ? 
+2020-11-23 21:44:35.159 DEBUG c.s.server.mapper.CourseMapper.deleteByPrimaryKey :159  [32m        [0;39m ==> Parameters: zDP79vT8(String)
+2020-11-23 21:44:35.325 DEBUG c.s.server.mapper.CourseMapper.deleteByPrimaryKey :159  [32m        [0;39m <==    Updates: 1
+2020-11-23 21:44:35.364 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-23 21:44:35.365 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:44:35.366 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:44:35.366 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-23 21:44:35.366 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:35.367 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-23 21:44:35.368 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:44:35.368 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-23 21:44:35.369 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-23 21:44:35.369 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:51.013 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-23 21:44:51.013 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:44:51.014 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:44:51.014 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 20
+2020-11-23 21:44:51.016 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:51.016 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-23 21:44:51.016 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:44:51.017 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-23 21:44:51.019 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-23 21:44:51.020 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-23 21:44:51.020 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-23 21:44:51.020 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-23 21:44:51.021 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-23 21:44:51.021 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2020-11-23 21:44:52.758 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-23 21:44:52.759 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:44:52.761 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:44:52.761 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-23 21:44:52.761 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:52.762 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-23 21:44:52.762 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:44:52.763 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-23 21:44:52.763 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2020-11-15 16:12:58.0, 2020-11-23 21:19:01.666
+2020-11-23 21:44:52.764 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 9yqWvDER, 测试小节02, 00000002, 00000000, null, null, F, 2, 2020-11-23 21:20:04.872, 2020-11-23 21:20:04.872
+2020-11-23 21:44:52.764 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m <==      Total: 2
+2020-11-23 21:44:54.941 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-23 21:44:54.942 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:44:54.943 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:44:54.943 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-23 21:44:54.944 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:54.944 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-23 21:44:54.945 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:44:54.946 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-23 21:44:54.946 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-23 21:44:54.946 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:58.821 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM chapter 
+2020-11-23 21:44:58.822 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:44:58.822 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:44:58.823 TRACE c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 20
+2020-11-23 21:44:58.824 DEBUG c.s.s.mapper.ChapterMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:44:58.825 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, course_id, `name` from chapter LIMIT ? 
+2020-11-23 21:44:58.825 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:44:58.826 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, course_id, name
+2020-11-23 21:44:58.826 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000000, 00000000, 测试大章00
+2020-11-23 21:44:58.826 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 00000000, 测试大章01
+2020-11-23 21:44:58.826 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000002, 00000000, 测试大章02
+2020-11-23 21:44:58.827 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000003, 00000000, 测试大章03
+2020-11-23 21:44:58.827 TRACE c.sise.server.mapper.ChapterMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000004, 00000000, 测试大章04
+2020-11-23 21:44:58.827 DEBUG c.sise.server.mapper.ChapterMapper.selectByExample:159  [32m        [0;39m <==      Total: 5
+2020-11-23 21:45:00.193 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM section 
+2020-11-23 21:45:00.193 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m ==> Parameters: 
+2020-11-23 21:45:00.194 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-23 21:45:00.194 TRACE c.s.s.mapper.SectionMapper.selectByExample_COUNT  :165  [32m        [0;39m <==        Row: 2
+2020-11-23 21:45:00.195 DEBUG c.s.s.mapper.SectionMapper.selectByExample_COUNT  :159  [32m        [0;39m <==      Total: 1
+2020-11-23 21:45:00.195 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==>  Preparing: select id, title, course_id, chapter_id, video, `time`, charge, sort, created_at, updated_at from section order by sort asc LIMIT ? 
+2020-11-23 21:45:00.196 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-23 21:45:00.196 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==    Columns: id, title, course_id, chapter_id, video, time, charge, sort, created_at, updated_at
+2020-11-23 21:45:00.197 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 00000001, 测试小节01, 00000001, 00000000, , 500, C, 1, 2020-11-15 16:12:58.0, 2020-11-23 21:19:01.666
+2020-11-23 21:45:00.197 TRACE c.sise.server.mapper.SectionMapper.selectByExample:165  [32m        [0;39m <==        Row: 9yqWvDER, 测试小节02, 00000002, 00000000, null, null, F, 2, 2020-11-23 21:20:04.872, 2020-11-23 21:20:04.872
+2020-11-23 21:45:00.197 DEBUG c.sise.server.mapper.SectionMapper.selectByExample:159  [32m        [0;39m <==      Total: 2

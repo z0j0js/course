@@ -1,0 +1,493 @@
+2020-11-24 21:44:08.904 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :225  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-11-24 21:44:09.050 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-24 21:44:10.716 INFO  com.sise.business.BusinessApplication             :651  [32m        [0;39m No active profile set, falling back to default profiles: default
+2020-11-24 21:44:11.919 INFO  o.springframework.cloud.context.scope.GenericScope:295  [32m        [0;39m BeanFactory id=479db631-ea12-368e-afa3-1e519916a92e
+2020-11-24 21:44:12.031 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-24 21:44:12.074 INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:330  [32m        [0;39m Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-24 21:44:12.530 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :92   [32m        [0;39m Tomcat initialized with port(s): 9002 (http)
+2020-11-24 21:44:12.539 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9002"]
+2020-11-24 21:44:12.540 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2020-11-24 21:44:12.540 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-11-24 21:44:12.657 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2020-11-24 21:44:12.658 INFO  org.springframework.web.context.ContextLoader     :284  [32m        [0;39m Root WebApplicationContext: initialization completed in 1895 ms
+2020-11-24 21:44:13.393 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-24 21:44:13.393 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-24 21:44:13.397 WARN  com.netflix.config.sources.URLConfigurationSource :121  [32m        [0;39m No URLs will be polled as dynamic configuration sources.
+2020-11-24 21:44:13.397 INFO  com.netflix.config.sources.URLConfigurationSource :122  [32m        [0;39m To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-24 21:44:13.521 INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor  :171  [32m        [0;39m Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-24 21:44:13.847 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2020-11-24 21:44:15.263 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-24 21:44:16.698 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-24 21:44:18.139 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-24 21:44:18.163 WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger:106  [32m        [0;39m You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-11-24 21:44:18.198 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:81   [32m        [0;39m Spring Cloud LoadBalancer is currently working with default default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2020-11-24 21:44:18.263 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :72   [32m        [0;39m Setting initial instance status as: STARTING
+2020-11-24 21:44:18.289 INFO  com.netflix.discovery.DiscoveryClient             :365  [32m        [0;39m Initializing Eureka in region us-east-1
+2020-11-24 21:44:18.685 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :70   [32m        [0;39m Using JSON encoding codec LegacyJacksonJson
+2020-11-24 21:44:18.686 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :71   [32m        [0;39m Using JSON decoding codec LegacyJacksonJson
+2020-11-24 21:44:18.808 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :80   [32m        [0;39m Using XML encoding codec XStreamXml
+2020-11-24 21:44:18.809 INFO  c.n.discovery.provider.DiscoveryJerseyProvider    :81   [32m        [0;39m Using XML decoding codec XStreamXml
+2020-11-24 21:44:19.191 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 21:44:19.417 INFO  com.netflix.discovery.DiscoveryClient             :976  [32m        [0;39m Disable delta property : false
+2020-11-24 21:44:19.417 INFO  com.netflix.discovery.DiscoveryClient             :977  [32m        [0;39m Single vip registry refresh property : null
+2020-11-24 21:44:19.418 INFO  com.netflix.discovery.DiscoveryClient             :978  [32m        [0;39m Force full registry fetch : false
+2020-11-24 21:44:19.418 INFO  com.netflix.discovery.DiscoveryClient             :979  [32m        [0;39m Application is null : false
+2020-11-24 21:44:19.418 INFO  com.netflix.discovery.DiscoveryClient             :980  [32m        [0;39m Registered Applications size is zero : true
+2020-11-24 21:44:19.418 INFO  com.netflix.discovery.DiscoveryClient             :982  [32m        [0;39m Application version is -1: true
+2020-11-24 21:44:19.418 INFO  com.netflix.discovery.DiscoveryClient             :1065 [32m        [0;39m Getting all instance registry info from the eureka server
+2020-11-24 21:44:19.534 INFO  com.netflix.discovery.DiscoveryClient             :1074 [32m        [0;39m The response status is 200
+2020-11-24 21:44:19.537 INFO  com.netflix.discovery.DiscoveryClient             :1288 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2020-11-24 21:44:19.539 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-24 21:44:19.542 INFO  com.netflix.discovery.DiscoveryClient             :465  [32m        [0;39m Discovery Client initialized at timestamp 1606225459541 with initial instances count: 1
+2020-11-24 21:44:19.543 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application BUSINESS with eureka with status UP
+2020-11-24 21:44:19.544 INFO  com.netflix.discovery.DiscoveryClient             :1323 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1606225459544, current=UP, previous=STARTING]
+2020-11-24 21:44:19.547 INFO  com.netflix.discovery.DiscoveryClient             :844  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002: registering service...
+2020-11-24 21:44:19.560 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9002"]
+2020-11-24 21:44:19.586 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :204  [32m        [0;39m Tomcat started on port(s): 9002 (http) with context path '/business'
+2020-11-24 21:44:19.587 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :145  [32m        [0;39m Updating port to 9002
+2020-11-24 21:44:19.587 INFO  com.netflix.discovery.DiscoveryClient             :853  [32m        [0;39m DiscoveryClient_BUSINESS/localhost:business:9002 - registration status: 204
+2020-11-24 21:44:21.029 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2020-11-24 21:44:21.031 INFO  com.sise.business.BusinessApplication             :61   [32m        [0;39m Started BusinessApplication in 14.486 seconds (JVM running for 15.753)
+2020-11-24 21:44:21.033 INFO  com.sise.business.BusinessApplication             :27   [32m        [0;39m 启动成功！！
+2020-11-24 21:44:21.034 INFO  com.sise.business.BusinessApplication             :28   [32m        [0;39m Business地址: 	http://127.0.0.1:9002
+2020-11-24 21:46:17.653 INFO  o.a.c.c.C.[Tomcat].[localhost].[/business]        :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-24 21:46:17.654 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2020-11-24 21:46:17.661 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 7 ms
+2020-11-24 21:46:17.816 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m        [0;39m HikariPool-1 - Starting...
+2020-11-24 21:46:18.230 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m        [0;39m HikariPool-1 - Start completed.
+2020-11-24 21:46:18.322 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 21:46:18.340 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 21:46:18.372 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 21:46:18.373 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-24 21:46:18.375 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:46:18.379 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 21:46:18.380 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 21:46:18.382 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 21:46:18.383 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 21:46:18.385 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:46:36.678 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:46:36.683 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:12.524 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:12.526 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:16.057 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 21:47:16.059 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 21:47:16.059 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 21:47:16.060 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-24 21:47:16.061 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:47:16.061 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 21:47:16.062 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 21:47:16.063 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 21:47:16.063 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 21:47:16.064 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:47:17.595 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:17.597 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:19.015 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:19.016 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:20.461 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:20.462 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:21.513 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:21.515 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:22.630 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:22.632 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:24.327 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:24.328 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:26.139 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 21:47:26.140 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 21:47:26.141 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 21:47:26.142 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-24 21:47:26.142 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:47:26.143 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 21:47:26.143 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 21:47:26.144 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 21:47:26.145 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 21:47:26.146 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:47:27.622 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:27.623 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:28.688 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:28.689 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:29.863 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:47:29.864 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:47:31.317 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 21:47:31.319 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 21:47:31.320 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 21:47:31.321 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-24 21:47:31.322 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:47:31.322 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 21:47:31.323 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 21:47:31.324 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 21:47:31.324 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 21:47:31.325 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:47:54.776 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 21:47:54.776 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 21:47:54.777 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 21:47:54.777 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-24 21:47:54.778 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:47:54.779 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 21:47:54.779 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 21:47:54.780 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 21:47:54.781 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 21:47:54.782 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:49:19.429 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 21:50:04.715 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 21:50:04.716 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 21:50:06.857 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 21:50:06.858 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 21:50:06.859 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 21:50:06.860 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-24 21:50:06.860 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:50:06.861 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 21:50:06.861 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 21:50:06.862 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 21:50:06.863 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 21:50:06.864 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:51:26.098 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 21:51:26.099 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 21:51:26.106 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 21:51:26.106 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 1
+2020-11-24 21:51:26.107 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:51:26.107 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 21:51:26.107 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-24 21:51:26.108 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 21:51:26.109 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 21:51:26.109 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:54:19.432 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 21:56:31.865 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 21:56:31.866 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 21:56:31.867 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 21:56:31.867 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 21:56:31.867 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:56:31.868 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 21:56:31.869 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-24 21:56:31.870 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 21:56:31.871 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 21:56:31.872 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 21:59:19.434 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 22:01:59.395 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:01:59.396 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:02:02.194 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:02:02.197 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:02:17.210 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:02:17.212 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:02:17.213 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:02:17.214 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:02:17.214 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:02:17.214 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:02:17.215 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:02:17.216 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:02:17.216 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:02:17.217 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, P, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 21:56:20.0, null
+2020-11-24 22:02:17.217 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:02:37.995 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:02:37.996 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:03:03.330 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:03:03.330 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:03:03.331 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:03:03.331 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:03:03.332 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:03:03.333 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:03:03.333 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:03:03.334 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:03:03.335 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:03:03.336 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, P, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 21:56:20.0, null
+2020-11-24 22:03:03.337 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:04:19.436 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 22:09:19.446 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 22:11:23.026 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:11:23.027 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:11:23.027 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:11:23.028 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:11:23.028 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:11:23.028 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:11:23.029 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:11:23.029 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:11:23.029 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:11:23.030 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, P, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 21:56:20.0, null
+2020-11-24 22:11:23.030 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:13:57.402 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:13:57.402 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:13:57.403 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:13:57.405 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:13:57.405 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:13:57.406 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:13:57.406 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:13:57.407 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:13:57.407 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:13:57.408 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, P, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 21:56:20.0, null
+2020-11-24 22:13:57.410 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:14:19.448 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 22:15:38.791 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:15:38.791 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:15:38.792 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:15:38.792 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:15:38.793 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:15:38.793 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:15:38.794 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:15:38.795 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:15:38.795 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:15:38.796 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, P, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 21:56:20.0, null
+2020-11-24 22:15:38.796 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:17:25.659 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:17:25.660 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:17:27.777 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:17:27.779 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:17:27.783 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:17:27.783 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:17:27.784 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:17:27.784 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:17:27.785 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:17:27.786 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:17:27.786 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:17:27.787 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, P, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 21:56:20.0, null
+2020-11-24 22:17:27.787 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:19:19.455 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 22:24:19.469 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 22:27:22.654 DEBUG c.s.server.mapper.CourseMapper.updateByPrimaryKey :159  [32m        [0;39m ==>  Preparing: update course set `name` = ?, summary = ?, `time` = ?, price = ?, image = ?, `level` = ?, charge = ?, `status` = ?, enroll = ?, sort = ?, created_at = ?, updated_at = ?, teacher_id = ? where id = ? 
+2020-11-24 22:27:22.656 DEBUG c.s.server.mapper.CourseMapper.updateByPrimaryKey :159  [32m        [0;39m ==> Parameters: 测试课程02(String), 这是一门测试课程(String), 10000(Integer), 0(BigDecimal), null, 1(String), C(String), D(String), 0(Integer), 0(Integer), 2020-11-24 21:56:16.0(Timestamp), 2020-11-24 22:27:22.651(Timestamp), null, 00000002(String)
+2020-11-24 22:27:22.710 DEBUG c.s.server.mapper.CourseMapper.updateByPrimaryKey :159  [32m        [0;39m <==    Updates: 1
+2020-11-24 22:27:22.826 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:27:22.827 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:27:22.828 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:27:22.828 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:27:22.829 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:27:22.830 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:27:22.830 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:27:22.833 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:27:22.834 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:27:22.836 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:27:22.837 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:28:45.058 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:28:45.059 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:29:19.484 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 22:29:46.214 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:29:46.217 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:29:48.198 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:29:48.199 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:29:48.202 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:29:48.202 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:29:48.203 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:29:48.204 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:29:48.204 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:29:48.205 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:29:48.206 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:29:48.206 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:29:48.207 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:29:49.583 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:29:49.584 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:29:51.008 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:29:51.010 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:29:53.145 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:29:53.146 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:29:53.147 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:29:53.147 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:29:53.148 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:29:53.150 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:29:53.151 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:29:53.152 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:29:53.152 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:29:53.153 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:29:53.153 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:29:54.789 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:29:54.791 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:29:56.928 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:29:56.928 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:29:56.929 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:29:56.929 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:29:56.930 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:29:56.931 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:29:56.933 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:29:56.934 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:29:56.935 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:29:56.936 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:29:56.936 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:29:59.369 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:29:59.371 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:30:00.930 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:30:00.931 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:30:00.932 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:30:00.933 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:30:00.933 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:30:00.933 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:30:00.934 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:30:00.935 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:30:00.935 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:30:00.936 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:30:00.936 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:31:37.089 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:31:37.090 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:31:38.863 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:31:38.864 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:31:38.864 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:31:38.865 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:31:38.866 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:31:38.867 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:31:38.867 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:31:38.868 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:31:38.868 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:31:38.869 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:31:38.869 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:34:16.417 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:34:16.418 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:34:19.491 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 22:35:32.908 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:35:32.909 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:35:35.122 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:35:35.122 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:35:35.123 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:35:35.123 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:35:35.124 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:35:35.124 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:35:35.124 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:35:35.125 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:35:35.125 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:35:35.126 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:35:35.126 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:35:36.466 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:35:36.468 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:35:37.680 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:35:37.680 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:35:37.681 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:35:37.682 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:35:37.682 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:35:37.683 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:35:37.683 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:35:37.684 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:35:37.685 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:35:37.685 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:35:37.686 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:36:29.122 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:36:29.122 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:36:29.123 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:36:29.123 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:36:29.123 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:36:29.124 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:36:29.125 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:36:29.125 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:36:29.126 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:36:29.126 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:36:29.126 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:36:35.455 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:36:35.455 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:36:35.456 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:36:35.457 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:36:35.457 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:36:35.457 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:36:35.458 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-24 22:36:35.458 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:36:35.459 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:36:35.459 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:36:36.928 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:36:36.928 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:36:36.929 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:36:36.929 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:36:36.929 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:36:36.930 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ?, ? 
+2020-11-24 22:36:36.930 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer), 1(Integer)
+2020-11-24 22:36:36.931 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:36:36.931 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000002, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:36:36.932 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:36:38.412 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:36:38.412 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:36:38.413 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:36:38.413 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:36:38.413 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:36:38.414 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:36:38.414 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 1(Integer)
+2020-11-24 22:36:38.415 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:36:38.415 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:36:38.416 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:39:19.492 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2020-11-24 22:40:00.327 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:40:00.328 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:40:00.331 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:40:00.331 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:40:00.331 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:40:00.332 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:40:00.333 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:40:00.334 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:40:00.334 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:40:00.335 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:40:00.336 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:40:11.747 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:40:11.748 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:40:13.321 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:40:13.323 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:40:14.711 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:40:14.712 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:40:14.712 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:40:14.713 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:40:14.713 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:40:14.713 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:40:14.714 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:40:14.715 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:40:14.715 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:40:14.716 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:40:14.716 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:40:53.742 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:40:53.743 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:40:53.743 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:40:53.744 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:40:53.744 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:40:53.745 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:40:53.745 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:40:53.746 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:40:53.746 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:40:53.747 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:40:53.747 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:40:55.544 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:40:55.544 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:40:56.911 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:40:56.912 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:40:56.913 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:40:56.913 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:40:56.913 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:40:56.914 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:40:56.914 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:40:56.915 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:40:56.915 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:40:56.916 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:40:56.919 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:41:06.995 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:41:06.996 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:41:08.430 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:41:08.431 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:41:10.327 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:41:10.328 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:41:11.812 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:41:11.813 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:41:11.814 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:41:11.816 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:41:11.817 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:41:11.817 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:41:11.818 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:41:11.819 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:41:11.819 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:41:11.820 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:41:11.820 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:42:18.867 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:42:18.867 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:42:18.868 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:42:18.868 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:42:18.869 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:42:18.869 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:42:18.870 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:42:18.871 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:42:18.871 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:42:18.872 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:42:18.873 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
+2020-11-24 22:42:24.021 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:42:24.023 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:42:25.412 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:42:25.413 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:42:26.665 WARN  c.s.business.controller.ControllerExceptionHandler:22   [32m        [0;39m 课程ID不能为空
+2020-11-24 22:42:26.666 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver   :199  [32m        [0;39m Resolved [com.sise.server.exception.ValidatorException: 课程ID不能为空]
+2020-11-24 22:42:28.162 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==>  Preparing: SELECT count(0) FROM course 
+2020-11-24 22:42:28.164 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m ==> Parameters: 
+2020-11-24 22:42:28.164 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==    Columns: count(0)
+2020-11-24 22:42:28.164 TRACE c.s.s.mapper.CourseMapper.selectByExample_COUNT   :165  [32m        [0;39m <==        Row: 2
+2020-11-24 22:42:28.165 DEBUG c.s.s.mapper.CourseMapper.selectByExample_COUNT   :159  [32m        [0;39m <==      Total: 1
+2020-11-24 22:42:28.165 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==>  Preparing: select id, `name`, summary, `time`, price, image, `level`, charge, `status`, enroll, sort, created_at, updated_at, teacher_id from course order by sort asc LIMIT ? 
+2020-11-24 22:42:28.166 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m ==> Parameters: 5(Integer)
+2020-11-24 22:42:28.167 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==    Columns: id, name, summary, time, price, image, level, charge, status, enroll, sort, created_at, updated_at, teacher_id
+2020-11-24 22:42:28.167 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000000, 测试课程01, 这是一门测试课程, 7200, 19.90, , 1, C, P, 100, 0, 2020-11-15 17:55:05.0, 2020-11-15 17:55:05.0, null
+2020-11-24 22:42:28.168 TRACE c.sise.server.mapper.CourseMapper.selectByExample :165  [32m        [0;39m <==        Row: 00000001, 测试课程02, 这是一门测试课程, 10000, 0.00, null, 1, C, D, 0, 0, 2020-11-24 21:56:16.0, 2020-11-24 22:27:22.651, null
+2020-11-24 22:42:28.168 DEBUG c.sise.server.mapper.CourseMapper.selectByExample :159  [32m        [0;39m <==      Total: 2
