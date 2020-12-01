@@ -3,9 +3,13 @@ package com.sise.server.service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.sise.server.domain.Course;
+import com.sise.server.domain.CourseContent;
 import com.sise.server.domain.CourseExample;
+import com.sise.server.dto.CourseContentDto;
 import com.sise.server.dto.CourseDto;
 import com.sise.server.dto.PageDto;
+import com.sise.server.dto.SortDto;
+import com.sise.server.mapper.CourseContentMapper;
 import com.sise.server.mapper.CourseMapper;
 import com.sise.server.mapper.my.MyCourseMapper;
 import com.sise.server.util.CopyUtil;
@@ -29,6 +33,9 @@ public class CourseService {
 
     @Resource
     private CourseCategoryService courseCategoryService;
+
+    @Resource
+    private CourseContentMapper courseContentMapper;
 
     /**
      * 列表查询
@@ -92,5 +99,48 @@ public class CourseService {
      */
     public void updateTime(String courseId) {
         myCourseMapper.updateTime(courseId);
+    }
+
+    /**
+     * 查找课程内容
+     */
+    public CourseContentDto findContent(String id) {
+        CourseContent content = courseContentMapper.selectByPrimaryKey(id);
+        if (content == null) {
+            return null;
+        }
+        return CopyUtil.copy(content, CourseContentDto.class);
+    }
+
+    /**
+     * 保存课程内容，包含新增和修改
+     */
+    public int saveContent(CourseContentDto contentDto) {
+        CourseContent content = CopyUtil.copy(contentDto, CourseContent.class);
+        int i = courseContentMapper.updateByPrimaryKeyWithBLOBs(content);
+        if (i == 0) {
+            i = courseContentMapper.insert(content);
+        }
+        return i;
+    }
+
+    /**
+     * 排序
+     * @param sortDto
+     */
+    @Transactional
+    public void sort(SortDto sortDto) {
+        // 修改当前记录的排序值
+        myCourseMapper.updateSort(sortDto);
+
+        // 如果排序值变大
+        if (sortDto.getNewSort() > sortDto.getOldSort()) {
+            myCourseMapper.moveSortsForward(sortDto);
+        }
+
+        // 如果排序值变小
+        if (sortDto.getNewSort() < sortDto.getOldSort()) {
+            myCourseMapper.moveSortsBackward(sortDto);
+        }
     }
 }
