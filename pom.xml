@@ -10,6 +10,7 @@
         <module>business</module>
         <module>generator</module>
         <module>server</module>
+        <module>file</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
