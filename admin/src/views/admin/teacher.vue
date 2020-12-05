@@ -88,12 +88,8 @@
                   <file v-bind:input-id="'image-upload'"
                         v-bind:text="'上传头像'"
                         v-bind:after-upload="afterUpload"
+                        v-bind:use="FILE_USE.TEACHER.key"
                         v-bind:suffixs="['jpg', 'jpeg', 'png']"></file>
-<!--                  <button type="button" v-on:click="selectImage()" class="btn btn-white btn-default btn-round">-->
-<!--                    <i class="ace-icon fa fa-upload"></i>-->
-<!--                    上传头像-->
-<!--                  </button>-->
-<!--                  <input class="hidden" type="file" ref="file" v-on:change="afterUpload()" id="file-upload-input">-->
                   <div v-show="teacher.image" class="row">
                     <div class="col-md-4">
                       <img v-bind:src="teacher.image" class="img-responsive">
@@ -141,6 +137,7 @@
       return {
         teacher: {},
         teachers: [],
+        FILE_USE: FILE_USE
       }
     },
     mounted: function() {
@@ -245,41 +242,6 @@
         _this.teacher.image = image;
       }
 
-      // afterUpload() {
-      //   let _this = this;
-      //   let formData = new window.FormData();
-      //   let file = _this.$refs.file.files[0];
-      //
-      //   // 判断文件格式
-      //   let suffixs = ["jpg", "jpeg", "png"];
-      //   let fileName = file.name;
-      //   let suffix = fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length).toLowerCase();
-      //   let validateSuffix = false;
-      //   for (let i = 0; i < suffixs.length; i++){
-      //     if (suffixs[i].toLowerCase() === suffix){
-      //       validateSuffix = true;
-      //       break;
-      //     }
-      //   }
-      //   if (!validateSuffix){
-      //     Toast.warning("文件格式不正确！只支持上传：" + suffixs.join(","));
-      //     return;
-      //   }
-      //
-      //   formData.append('file', file);
-      //   Loading.show();
-      //   _this.$ajax.post(process.env.VUE_APP_SERVER + '/file/admin/upload', formData).then((respond)=>{
-      //     Loading.hide();
-      //     let resp = respond.data;
-      //     let image = resp.content;
-      //     console.log("头像地址：", image);
-      //     _this.teacher.image = image;
-      //   });
-      // },
-      //
-      // selectImage() {
-      //   $("#file-upload-input").trigger("click");
-      // }
     }
   }
 </script>
