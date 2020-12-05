@@ -1,31 +1,14 @@
-package com.sise.server.dto;
+package com.sise.server.domain;
 
-
-public class CourseContentFileDto {
-
-    /**
-     * id
-     */
+public class CourseContentFile {
     private String id;
 
-    /**
-     * 课程id
-     */
     private String courseId;
 
-    /**
-     * 地址
-     */
     private String url;
 
-    /**
-     * 文件名
-     */
     private String name;
 
-    /**
-     * 大小|字节b
-     */
     private Integer size;
 
     public String getId() {
@@ -68,7 +51,6 @@ public class CourseContentFileDto {
         this.size = size;
     }
 
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -83,5 +65,4 @@ public class CourseContentFileDto {
         sb.append("]");
         return sb.toString();
     }
-
 }

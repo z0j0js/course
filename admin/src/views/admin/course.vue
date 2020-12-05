@@ -187,7 +187,7 @@
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-      <div id="course-sort-modal" class="modal fade" tabindex="-1" role="dialog">
+      <div id="course-sort-modal" class="modal fade" tabindex="-1" role="dialog" style="overflow:auto;">
           <div class="modal-dialog" role="document">
               <div class="modal-content">
                   <div class="modal-header">
