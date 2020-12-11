@@ -57,8 +57,8 @@
         }
 
         // 文件分片
-        let shardSize = 20 * 1024 * 1024; // 以20MB为一个分片
-        let shardIndex = 0; // 分片索引
+        let shardSize = 30 * 1024 * 1024; // 以20MB为一个分片
+        let shardIndex = 1; // 分片索引
         let start = shardIndex * shardSize;
         let end = Math.min(file.size, start + shardSize);
         let fileShard = file.slice(start, end);
