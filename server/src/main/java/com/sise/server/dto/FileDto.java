@@ -1,7 +1,8 @@
 package com.sise.server.dto;
 
-import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.util.Date;
 
 public class FileDto {
 
@@ -46,6 +47,16 @@ public class FileDto {
      */
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",timezone = "GMT+8")
     private Date updatedAt;
+
+    private String shard;
+
+    public String getShard() {
+        return shard;
+    }
+
+    public void setShard(String shard) {
+        this.shard = shard;
+    }
 
     /**
      * 已上传分片
@@ -191,6 +202,7 @@ public class FileDto {
         sb.append(", use=").append(use);
         sb.append(", createdAt=").append(createdAt);
         sb.append(", updatedAt=").append(updatedAt);
+        sb.append(", shard=").append(shard);
         sb.append(", shardIndex=").append(shardIndex);
         sb.append(", shardSize=").append(shardSize);
         sb.append(", shardTotal=").append(shardTotal);
