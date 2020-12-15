@@ -108,7 +108,7 @@ public class UploadController {
         LOG.info("合并分片结束");
 
         System.gc();
-        Thread.sleep(100);
+        Thread.sleep(1000);
 
         // 删除分片
         LOG.info("删除分片开始");
@@ -119,5 +119,25 @@ public class UploadController {
             LOG.info("删除{}，{}", filePath, result ? "成功" : "失败");
         }
         LOG.info("删除分片结束");
+    }
+
+    @GetMapping("/check/{key}")
+    public ResponseDto check(@PathVariable String key) throws Exception {
+        LOG.info("检查上传分片开始：{}", key);
+        ResponseDto responseDto = new ResponseDto();
+        FileDto fileDto = fileService.findByKey(key);
+//        if (fileDto != null) {
+//            if (StringUtils.isEmpty(fileDto.getVod())) {
+//                fileDto.setPath(FILE_DOMAIN + fileDto.getPath());
+//            } else {
+//                DefaultAcsClient vodClient = VodUtil.initVodClient(accessKeyId, accessKeySecret);
+//                GetMezzanineInfoResponse response = VodUtil.getMezzanineInfo(vodClient, fileDto.getVod());
+//                System.out.println("获取视频信息, response : " + JSON.toJSONString(response));
+//                String fileUrl = response.getMezzanine().getFileURL();
+//                fileDto.setPath(fileUrl);
+//            }
+//        }
+        responseDto.setContent(fileDto);
+        return responseDto;
     }
 }
