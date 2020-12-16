@@ -1,4 +1,5 @@
-var KEY = "!@#QWERT";
+//var KEY = "!@#QWERT";
+var KEY = "_course";
 /*
  * Configurable variables. You may need to tweak these to be compatible with
  * the server-side, but the defaults work in most cases.
