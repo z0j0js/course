@@ -1,26 +1,12 @@
-package com.sise.server.dto;
+package com.sise.server.domain;
 
-
-public class UserDto {
-
-    /**
-     * id
-     */
+public class User {
     private String id;
 
-    /**
-     * 登陆名
-     */
     private String loginName;
 
-    /**
-     * 昵称
-     */
     private String name;
 
-    /**
-     * 密码
-     */
     private String password;
 
     public String getId() {
@@ -55,7 +41,6 @@ public class UserDto {
         this.password = password;
     }
 
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -69,5 +54,4 @@ public class UserDto {
         sb.append("]");
         return sb.toString();
     }
-
 }
