@@ -92,6 +92,8 @@ public class UserDto {
         sb.append(", loginName=").append(loginName);
         sb.append(", name=").append(name);
         sb.append(", password=").append(password);
+        sb.append(", imageCode=").append(imageCode);
+        sb.append(", imageCodeToken=").append(imageCodeToken);
         sb.append("]");
         return sb.toString();
     }
