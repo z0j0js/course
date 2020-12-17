@@ -1,8 +1,9 @@
 package com.sise.system.controller.admin;
 
-import com.sise.server.dto.UserDto;
+import com.sise.server.dto.LoginUserDto;
 import com.sise.server.dto.PageDto;
 import com.sise.server.dto.ResponseDto;
+import com.sise.server.dto.UserDto;
 import com.sise.server.service.UserService;
 import com.sise.server.util.ValidatorUtil;
 import org.slf4j.Logger;
@@ -70,6 +71,20 @@ public class UserController {
         ResponseDto responseDto = new ResponseDto();
         userService.savePassword(userDto);
         responseDto.setContent(userDto);
+        return responseDto;
+    }
+
+
+    /**
+     * 登录
+     */
+    @PostMapping("/login")
+    public ResponseDto login(@RequestBody UserDto userDto) {
+        LOG.info("用户登录开始");
+        userDto.setPassword(DigestUtils.md5DigestAsHex(userDto.getPassword().getBytes()));
+        ResponseDto responseDto = new ResponseDto();
+        LoginUserDto loginUserDto = userService.login(userDto);
+        responseDto.setContent(loginUserDto);
         return responseDto;
     }
 }

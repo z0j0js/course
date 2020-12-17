@@ -4,6 +4,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.sise.server.domain.User;
 import com.sise.server.domain.UserExample;
+import com.sise.server.dto.LoginUserDto;
 import com.sise.server.dto.PageDto;
 import com.sise.server.dto.UserDto;
 import com.sise.server.exception.BusinessException;
@@ -11,6 +12,8 @@ import com.sise.server.exception.BusinessExceptionCode;
 import com.sise.server.mapper.UserMapper;
 import com.sise.server.util.CopyUtil;
 import com.sise.server.util.UuidUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
@@ -20,6 +23,8 @@ import java.util.List;
 
 @Service
 public class UserService {
+
+    private static final Logger LOG = LoggerFactory.getLogger(UserService.class);
 
     @Resource
     private UserMapper userMapper;
@@ -101,5 +106,27 @@ public class UserService {
         user.setId(userDto.getId());
         user.setPassword(userDto.getPassword());
         userMapper.updateByPrimaryKeySelective(user);
+    }
+
+
+    /**
+     * 登录
+     * @param userDto
+     */
+    public LoginUserDto login(UserDto userDto) {
+        User user = selectByLoginName(userDto.getLoginName());
+        if (user == null) {
+            LOG.info("用户名不存在, {}", userDto.getLoginName());
+            throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+        } else {
+            if (user.getPassword().equals(userDto.getPassword())) {
+                // 登录成功
+                LoginUserDto loginUserDto = CopyUtil.copy(user, LoginUserDto.class);
+                return loginUserDto;
+            } else {
+                LOG.info("密码不对, 输入密码：{}, 数据库密码：{}", userDto.getPassword(), user.getPassword());
+                throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
+            }
+        }
     }
 }

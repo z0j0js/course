@@ -19,7 +19,7 @@
                                 <div class="widget-main">
                                     <h4 class="header blue lighter bigger">
                                         <i class="ace-icon fa fa-coffee green"></i>
-                                        Please Enter Your Information
+                                        控台登录
                                     </h4>
 
                                     <div class="space-6"></div>
@@ -28,14 +28,14 @@
                                         <fieldset>
                                             <label class="block clearfix">
                                                 <span class="block input-icon input-icon-right">
-                                                    <input type="text" class="form-control" placeholder="Username" />
+                                                    <input v-model="user.loginName" type="text" class="form-control" placeholder="用户名" />
                                                     <i class="ace-icon fa fa-user"></i>
                                                 </span>
                                             </label>
 
                                             <label class="block clearfix">
                                                 <span class="block input-icon input-icon-right">
-                                                    <input type="password" class="form-control" placeholder="Password" />
+                                                    <input v-model="user.password" type="password" class="form-control" placeholder="密码" />
                                                     <i class="ace-icon fa fa-lock"></i>
                                                 </span>
                                             </label>
@@ -45,12 +45,12 @@
                                             <div class="clearfix">
                                                 <label class="inline">
                                                     <input type="checkbox" class="ace" />
-                                                    <span class="lbl"> Remember Me</span>
+                                                    <span class="lbl"> 记住我</span>
                                                 </label>
 
                                                 <button type="button" class="width-35 pull-right btn btn-sm btn-primary" @click="login()">
                                                     <i class="ace-icon fa fa-key"></i>
-                                                    <span class="bigger-110">Login</span>
+                                                    <span class="bigger-110">登录</span>
                                                 </button>
                                             </div>
 
@@ -71,14 +71,32 @@
 <script>
 export default {
     name: "login",
+    data: function() {
+        return {
+            user: {},
+        }
+    },
     mounted() {
         $("body").removeClass("no-skin");
         $("body").attr("class", "login-layout light-login");
     },
     methods: {
-        login() {
-            this.$router.push("/welcome")
-        }
+        login () {
+            let _this = this;
+            _this.user.password = hex_md5(_this.user.password + KEY);
+            Loading.show();
+            _this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/user/login', _this.user).then((response)=>{
+                Loading.hide();
+                let resp = response.data;
+                if (resp.success) {
+                    console.log("登录成功：", resp.content);
+                    Tool.setLoginUser(resp.content);
+                    _this.$router.push("/welcome")
+                } else {
+                    Toast.warning(resp.message);
+                }
+            });
+        },
     },
 }
 </script>
