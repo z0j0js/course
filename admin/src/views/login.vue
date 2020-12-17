@@ -44,7 +44,7 @@
 
                                             <div class="clearfix">
                                                 <label class="inline">
-                                                    <input type="checkbox" class="ace" />
+                                                    <input v-model="remember" type="checkbox" class="ace" />
                                                     <span class="lbl"> 记住我</span>
                                                 </label>
 
@@ -74,23 +74,46 @@ export default {
     data: function() {
         return {
             user: {},
+            remember : true //默认勾选记住我
         }
     },
     mounted() {
+        let _this = this;
         $("body").removeClass("no-skin");
         $("body").attr("class", "login-layout light-login");
+        let rememberUser = LocalStorage.get(LOCAL_KEY_REMEMBER_USER);
+        if (rememberUser) {
+            _this.user = rememberUser;
+        }
     },
     methods: {
         login () {
             let _this = this;
-            _this.user.password = hex_md5(_this.user.password + KEY);
+            // let passwordShow = _this.user.password;
+            let md5 = hex_md5(_this.user.password);
+            let rememberUser = LocalStorage.get(LOCAL_KEY_REMEMBER_USER) || {};
+            if (md5 !== rememberUser.md5) {
+                _this.user.password = hex_md5(_this.user.password + KEY);
+            }
+
             Loading.show();
             _this.$ajax.post(process.env.VUE_APP_SERVER + '/system/admin/user/login', _this.user).then((response)=>{
                 Loading.hide();
                 let resp = response.data;
                 if (resp.success) {
                     console.log("登录成功：", resp.content);
+                    let loginUser = resp.content;
                     Tool.setLoginUser(resp.content);
+                    if (_this.remember) {
+                        let md5 = hex_md5(_this.user.password);
+                        LocalStorage.set(LOCAL_KEY_REMEMBER_USER, {
+                            loginName:loginUser.loginName,
+                            password:_this.user.password,
+                            md5:md5
+                        });
+                    } else {
+                        LocalStorage.set(LOCAL_KEY_REMEMBER_USER, null);
+                    }
                     _this.$router.push("/welcome")
                 } else {
                     Toast.warning(resp.message);
