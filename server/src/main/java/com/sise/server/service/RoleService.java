@@ -2,14 +2,12 @@ package com.sise.server.service;
 
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.sise.server.domain.Role;
-import com.sise.server.domain.RoleExample;
-import com.sise.server.domain.RoleResource;
-import com.sise.server.domain.RoleResourceExample;
+import com.sise.server.domain.*;
 import com.sise.server.dto.PageDto;
 import com.sise.server.dto.RoleDto;
 import com.sise.server.mapper.RoleMapper;
 import com.sise.server.mapper.RoleResourceMapper;
+import com.sise.server.mapper.RoleUserMapper;
 import com.sise.server.util.CopyUtil;
 import com.sise.server.util.UuidUtil;
 import org.springframework.stereotype.Service;
@@ -27,6 +25,9 @@ public class RoleService {
 
     @Resource
     private RoleResourceMapper roleResourceMapper;
+
+    @Resource
+    private RoleUserMapper roleUserMapper;
 
     /**
      * 列表查询
@@ -110,5 +111,41 @@ public class RoleService {
             resourceIdList.add(roleResourceList.get(i).getResourceId());
         }
         return resourceIdList;
+    }
+
+    /**
+     * 按角色保存用户
+     */
+    public void saveUser(RoleDto roleDto) {
+        String roleId = roleDto.getId();
+        List<String> userIdList = roleDto.getUserIds();
+        // 清空库中所有的当前角色下的记录
+        RoleUserExample example = new RoleUserExample();
+        example.createCriteria().andRoleIdEqualTo(roleId);
+        roleUserMapper.deleteByExample(example);
+
+        // 保存角色用户
+        for (int i = 0; i < userIdList.size(); i++) {
+            RoleUser roleUser = new RoleUser();
+            roleUser.setId(UuidUtil.getShortUuid());
+            roleUser.setRoleId(roleId);
+            roleUser.setUserId(userIdList.get(i));
+            roleUserMapper.insert(roleUser);
+        }
+    }
+
+    /**
+     * 按角色加载用户
+     * @param roleId
+     */
+    public List<String> listUser(String roleId) {
+        RoleUserExample example = new RoleUserExample();
+        example.createCriteria().andRoleIdEqualTo(roleId);
+        List<RoleUser> roleUserList = roleUserMapper.selectByExample(example);
+        List<String> userIdList = new ArrayList<>();
+        for (int i = 0, l = roleUserList.size(); i < l; i++) {
+            userIdList.add(roleUserList.get(i).getUserId());
+        }
+        return userIdList;
     }
 }
