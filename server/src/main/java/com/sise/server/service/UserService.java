@@ -1,15 +1,18 @@
 package com.sise.server.service;
 
+import com.alibaba.fastjson.JSON;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.sise.server.domain.User;
 import com.sise.server.domain.UserExample;
 import com.sise.server.dto.LoginUserDto;
 import com.sise.server.dto.PageDto;
+import com.sise.server.dto.ResourceDto;
 import com.sise.server.dto.UserDto;
 import com.sise.server.exception.BusinessException;
 import com.sise.server.exception.BusinessExceptionCode;
 import com.sise.server.mapper.UserMapper;
+import com.sise.server.mapper.my.MyUserMapper;
 import com.sise.server.util.CopyUtil;
 import com.sise.server.util.UuidUtil;
 import org.slf4j.Logger;
@@ -19,6 +22,7 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
+import java.util.HashSet;
 import java.util.List;
 
 @Service
@@ -28,6 +32,9 @@ public class UserService {
 
     @Resource
     private UserMapper userMapper;
+
+    @Resource
+    private MyUserMapper myUserMapper;
 
     /**
      * 列表查询
@@ -122,11 +129,36 @@ public class UserService {
             if (user.getPassword().equals(userDto.getPassword())) {
                 // 登录成功
                 LoginUserDto loginUserDto = CopyUtil.copy(user, LoginUserDto.class);
+                // 为登录用户读取权限
+                setAuth(loginUserDto);
                 return loginUserDto;
             } else {
                 LOG.info("密码不对, 输入密码：{}, 数据库密码：{}", userDto.getPassword(), user.getPassword());
                 throw new BusinessException(BusinessExceptionCode.LOGIN_USER_ERROR);
             }
         }
+    }
+
+    /**
+     * 为登录用户读取权限
+     */
+    private void setAuth(LoginUserDto loginUserDto) {
+        List<ResourceDto> resourceDtoList = myUserMapper.findResources(loginUserDto.getId());
+        loginUserDto.setResources(resourceDtoList);
+
+        // 整理所有有权限的请求，用于接口拦截
+        HashSet<String> requestSet = new HashSet<>();
+        if (!CollectionUtils.isEmpty(resourceDtoList)) {
+            for (int i = 0, l = resourceDtoList.size(); i < l; i++) {
+                ResourceDto resourceDto = resourceDtoList.get(i);
+                String arrayString = resourceDto.getRequest();
+                List<String> requestList = JSON.parseArray(arrayString, String.class);
+                if (!CollectionUtils.isEmpty(requestList)) {
+                    requestSet.addAll(requestList);
+                }
+            }
+        }
+        LOG.info("有权限的请求：{}", requestSet);
+        loginUserDto.setRequests(requestSet);
     }
 }
