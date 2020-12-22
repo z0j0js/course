@@ -5,10 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.sise.server.domain.Course;
 import com.sise.server.domain.CourseContent;
 import com.sise.server.domain.CourseExample;
-import com.sise.server.dto.CourseContentDto;
-import com.sise.server.dto.CourseDto;
-import com.sise.server.dto.PageDto;
-import com.sise.server.dto.SortDto;
+import com.sise.server.dto.*;
 import com.sise.server.enums.CourseStatusEnum;
 import com.sise.server.mapper.CourseContentMapper;
 import com.sise.server.mapper.CourseMapper;
@@ -41,9 +38,13 @@ public class CourseService {
     /**
      * 列表查询
      */
-    public void list(PageDto pageDto) {
+    public void list(CoursePageDto pageDto) {
         PageHelper.startPage(pageDto.getPage(), pageDto.getSize());
         CourseExample courseExample = new CourseExample();
+        CourseExample.Criteria criteria = courseExample.createCriteria();
+        if (!StringUtils.isEmpty(pageDto.getStatus())) {
+            criteria.andStatusEqualTo(pageDto.getStatus());
+        }
         courseExample.setOrderByClause("sort asc");
         List<Course> courseList = courseMapper.selectByExample(courseExample);
         PageInfo<Course> pageInfo = new PageInfo<>(courseList);
