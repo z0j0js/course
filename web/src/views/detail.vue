@@ -86,22 +86,20 @@
               </div>
             </div>
           </div>
-
         </div>
-<!--        <h3>课程详情</h3>-->
       </div>
     </div>
 
-<!--    <modal-player ref="modalPlayer"></modal-player>-->
+    <modal-player ref="modalPlayer"></modal-player>
   </main>
 </template>
 
 <script>
 
-  // import ModalPlayer from "../components/modal-player";
+  import ModalPlayer from "../components/modal-player";
   export default {
     name: 'detail',
-    // components: {ModalPlayer},
+    components: {ModalPlayer},
     data: function () {
       return {
         id: "",
