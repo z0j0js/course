@@ -1,5 +1,7 @@
 package com.sise.server.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.sise.server.domain.Sms;
 import com.sise.server.domain.SmsExample;
 import com.sise.server.dto.PageDto;
@@ -9,11 +11,12 @@ import com.sise.server.exception.BusinessException;
 import com.sise.server.exception.BusinessExceptionCode;
 import com.sise.server.mapper.SmsMapper;
 import com.sise.server.util.CopyUtil;
+import com.sise.server.util.SendByEmailTools;
 import com.sise.server.util.UuidUtil;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
@@ -28,6 +31,10 @@ public class SmsService {
 
     @Resource
     private SmsMapper smsMapper;
+
+    @Autowired
+    @Qualifier("sendmail")
+    private SendByEmailTools sendmail;
 
     /**
      * 列表查询
@@ -113,6 +120,7 @@ public class SmsService {
         this.save(smsDto);
 
         // TODO 调第三方短信接口发送短信
+        sendmail.send("z0j0js@163.com", "783155876@qq.com", "码学社区", "您的验证码为："+ code);
     }
 
     /**
