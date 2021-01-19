@@ -13,7 +13,7 @@
 
         <div class="album py-5 bg-light">
             <div class="container">
-                <div class="title1">最新上线</div>
+                <div class="title1">精品好课</div>
                 <div class="row">
                     <div v-for="o in news" class="col-md-4">
                         <the-course v-bind:course="o"></the-course>
@@ -22,7 +22,7 @@
 
                 <hr>
 
-                <div class="title2">好课推荐</div>
+                <div class="title2">最新上线</div>
                 <div class="row">
                     <div v-for="o in news" class="col-md-4">
                         <the-course v-bind:course="o"></the-course>

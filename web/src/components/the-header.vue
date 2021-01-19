@@ -2,9 +2,9 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    📺 码学社区
-                </a>
+                <router-link class="navbar-brand" to="/">
+                    📺 码学码问
+                </router-link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,7 +29,7 @@
                             </div>
                         </li>
                     </ul>
-                    <span v-show="loginMember.id" class="text-black">您好：{{loginMember.name}}</span>&nbsp;&nbsp;
+                    <span v-show="loginMember.id" class="text-black">您好：{{loginMember.name}}</span>
                     <button v-show="loginMember.id" v-on:click="logout()" class="btn btn-outline-success my-2 my-sm-0">退出登录</button>
                     <button v-show="!loginMember.id" v-on:click="openLoginModal()" class="btn btn-outline-success my-2 my-sm-0">登录/注册</button>
                 </div>

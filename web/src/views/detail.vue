@@ -9,13 +9,13 @@
           <div class="col-sm-6">
             <h1>{{course.name}}</h1>
             <p class="course-head-item">
-              <span><i class="fa fa-clock-o"></i> {{(course.time) | formatSecond}}</span>
-              <span>{{COURSE_LEVEL | optionKV(course.level)}}</span>
-              <span><i class="fa fa-user"></i> {{course.enroll}}</span>
+              <span><i class="fa fa-clock-o"></i>总时长：{{(course.time) | formatSecond}}</span>
+              <span>分类：{{COURSE_LEVEL | optionKV(course.level)}}</span>
+              <span><i class="fa fa-user"></i>报名人数：{{course.enroll}}人</span>
             </p>
-            <p class="course-head-desc">{{course.summary}}</p>
+            <p class="course-head-desc">简介：{{course.summary}}</p>
             <p class="course-head-price">
-              <span class="price-now text-danger"><i class="fa fa-yen"></i>&nbsp;{{course.price}}&nbsp;&nbsp;</span>
+              <span class="price-now text-danger"><i class="fa fa-yen"></i>💴 ￥{{course.price}}&nbsp;&nbsp;</span>
             </p>
             <p class="course-head-button-links">
               <a v-show="!memberCourse.id" v-on:click="enroll()" class="btn btn-lg btn-primary btn-shadow" href="javascript:;">立即报名</a>
@@ -81,8 +81,8 @@
               <img v-bind:src="teacher.image" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">{{teacher.name}}</h5>
-                <p class="card-text">{{teacher.motto}}</p>
-                <p class="card-text">{{teacher.intro}}</p>
+                <p class="card-text">格言：{{teacher.motto}}</p>
+                <p class="card-text">自我评价：{{teacher.intro}}</p>
               </div>
             </div>
           </div>

@@ -9,8 +9,8 @@
           <router-link v-bind:to="'/detail?id=' + course.id" class="btn btn-outline-secondary">课程详情</router-link>
         </div>
         <div class="text-muted">
-          <span class="badge badge-info"><i class="fa fa-yen" aria-hidden="true"></i>&nbsp;{{course.price}}</span>&nbsp;
-          <span class="badge badge-info"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;{{course.enroll}}</span>&nbsp;
+          <span class="badge badge-info"><i class="fa fa-yen" aria-hidden="true"></i>&nbsp;￥{{course.price}}</span>&nbsp;
+          <span class="badge badge-info"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;报名人数:{{course.enroll}}</span>&nbsp;
           <span class="badge badge-info">{{COURSE_LEVEL | optionKV(course.level)}}</span>
         </div>
       </div>

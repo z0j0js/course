@@ -7,7 +7,7 @@
                     <div class="center">
                         <h1>
                             <i class="ace-icon fa fa-leaf green"></i>
-                            <span class="">控台登录</span>
+                            <span class="">码学码问——控台登录</span>
                         </h1>
                     </div>
 
@@ -19,7 +19,7 @@
                                 <div class="widget-main">
                                     <h4 class="header blue lighter bigger">
                                         <i class="ace-icon fa fa-coffee green"></i>
-                                        控台登录
+                                        码学码问——控台登录
                                     </h4>
 
                                     <div class="space-6"></div>
