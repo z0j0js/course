@@ -112,4 +112,13 @@ public class MemberCourseService {
         MemberCourse memberCourse = this.select(memberCourseDto.getMemberId(), memberCourseDto.getCourseId());
         return CopyUtil.copy(memberCourse, MemberCourseDto.class);
     }
+
+    /**
+     * 会员购买课程
+     * @param memberCourseDto
+     */
+    public void enrolls(MemberCourseDto memberCourseDto) {
+        MemberCourse memberCourse = CopyUtil.copy(memberCourseDto, MemberCourse.class);
+        this.insert(memberCourse);
+    }
 }

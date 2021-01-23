@@ -18,8 +18,11 @@
               <span class="price-now text-danger"><i class="fa fa-yen"></i>💴 ￥{{course.price}}&nbsp;&nbsp;</span>
             </p>
             <p class="course-head-button-links">
-              <a v-show="!memberCourse.id" v-on:click="enroll()" class="btn btn-lg btn-primary btn-shadow" href="javascript:;">立即报名</a>
-              <a v-show="memberCourse.id" href="#" class="btn btn-lg btn-success btn-shadow disabled">您已报名</a>
+<!--              <a v-show="!memberCourse.id" v-on:click="enroll()" class="btn btn-lg btn-primary btn-shadow" href="javascript:;">立即报名</a>-->
+<!--              <a v-show="memberCourse.id" href="#" class="btn btn-lg btn-success btn-shadow disabled">您已报名</a>-->
+              <a v-show="!memberCourse.id" v-on:click="buy()" class="btn btn-lg btn-primary btn-shadow" href="javascript:;">购买课程</a>
+              <a v-show="memberCourse.id" href="#" class="btn btn-lg btn-success btn-shadow disabled">您已购买</a>
+<!--              &nbsp;<a v-on:click="buy()" class="btn btn-lg btn-primary btn-shadow" href="javascript:;">购买课程</a>-->
             </p>
           </div>
         </div>
@@ -199,6 +202,27 @@
           } else {
             Toast.warning(resp.message);
           }
+        });
+      },
+
+      /**
+       * 支付
+       */
+      buy() {
+        let _this = this;
+        let loginMember = Tool.getLoginMember();
+        if (Tool.isEmpty(loginMember)) {
+          Toast.warning("请先登录");
+          return;
+        }
+        _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/web/pay/buy', {
+          courseId: _this.course.id,
+          courseName: _this.course.name,
+          coursePrice: _this.course.price,
+          memberId: loginMember.id
+        }).then((response)=>{
+          document.querySelector('body').innerHTML = response.data;//查找到当前页面的body，将后台返回的form替换掉他的内容
+          document.forms[0].submit();  //执行submit表单提交，让页面重定向，跳转到支付宝页面
         });
       },
 

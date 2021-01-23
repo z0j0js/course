@@ -1,7 +1,8 @@
 package com.sise.server.dto;
 
-import java.util.Date;
 import com.fasterxml.jackson.annotation.JsonFormat;
+
+import java.util.Date;
 
 public class MemberCourseDto {
 
@@ -19,6 +20,16 @@ public class MemberCourseDto {
      * 课程id
      */
     private String courseId;
+
+    /**
+     * 课程名称
+     */
+    private String courseName;
+
+    /**
+     * 课程价格
+     */
+    private String coursePrice;
 
     /**
      * 报名时间
@@ -50,6 +61,22 @@ public class MemberCourseDto {
         this.courseId = courseId;
     }
 
+    public String getCourseName() {
+        return courseName;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public String getCoursePrice() {
+        return coursePrice;
+    }
+
+    public void setCoursePrice(String coursePrice) {
+        this.coursePrice = coursePrice;
+    }
+
     public Date getAt() {
         return at;
     }
@@ -68,6 +95,8 @@ public class MemberCourseDto {
         sb.append(", id=").append(id);
         sb.append(", memberId=").append(memberId);
         sb.append(", courseId=").append(courseId);
+        sb.append(", courseName=").append(courseName);
+        sb.append(", coursePrice=").append(coursePrice);
         sb.append(", at=").append(at);
         sb.append("]");
         return sb.toString();
