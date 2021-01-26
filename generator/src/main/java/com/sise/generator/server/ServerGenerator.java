@@ -14,7 +14,7 @@ public class ServerGenerator {
     static String MODULE = "business";
     static String toDtoPath = "server\\src\\main\\java\\com\\sise\\server\\dto\\";
     static String toServicePath = "server\\src\\main\\java\\com\\sise\\server\\service\\";
-    static String toControllerPath = MODULE + "\\src\\main\\java\\com\\sise\\" + MODULE + "\\controller\\admin\\";
+    static String toControllerPath = MODULE + "\\src\\main\\java\\com\\sise\\" + MODULE + "\\controller\\web\\";
     static String generatorConfigPath = "server\\src\\main\\resources\\generator\\generatorConfig.xml";
 
     public static void main(String[] args) throws Exception {

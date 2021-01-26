@@ -29,7 +29,7 @@
 
         <div class="row">
 
-          <!-- 课程内容 & 大章小节 -->
+          <!-- 课程内容 & 大章小节 & 用户评价 -->
           <div class="col-md-9">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
@@ -38,6 +38,9 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#chapter" data-toggle="tab">章节目录</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#comment" data-toggle="tab">用户评价</a>
               </li>
             </ul>
 
@@ -74,6 +77,9 @@
                   </div>
                 </div>
               </div>
+              <div class="tab-pane" id="comment">
+                <comment ref="comment"></comment>
+              </div>
             </div>
 
           </div>
@@ -100,9 +106,10 @@
 <script>
 
   import ModalPlayer from "../components/modal-player";
+  import Comment from "../components/comment";
   export default {
     name: 'detail',
-    components: {ModalPlayer},
+    components: {ModalPlayer, Comment},
     data: function () {
       return {
         id: "",
@@ -316,3 +323,4 @@
     }
   }
 </style>
+
