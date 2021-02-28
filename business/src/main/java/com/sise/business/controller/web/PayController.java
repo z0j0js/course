@@ -44,7 +44,7 @@ public class PayController {
     public String pay(@RequestBody MemberCourseDto memberCourseDto)
             throws AlipayApiException {
         //1.接收页面传过来的数据:订单号，金额，名称，商品描述  表单中的name值=参数名
-        String WIDout_trade_no = memberCourseDto.getMemberId() + memberCourseDto.getCourseId();
+        String WIDout_trade_no = memberCourseDto.getMemberId() + memberCourseDto.getCourseId() + System.currentTimeMillis();
         String WIDtotal_amount = memberCourseDto.getCoursePrice();
         String WIDsubject = memberCourseDto.getCourseName();
         String WIDbody = "会员号："+ memberCourseDto.getMemberId() +"，购买《"+ memberCourseDto.getCourseName() +"》课程";
@@ -102,7 +102,7 @@ public class PayController {
 //            out.println("trade_no:"+trade_no+"<br/>out_trade_no:"+out_trade_no+"<br/>total_amount:"+total_amount);
             String out_trade_no = request.getParameter("out_trade_no");
             String memberId = out_trade_no.substring(0,8);
-            String courseId = out_trade_no.substring(8);
+            String courseId = out_trade_no.substring(8,16);
             MemberCourseDto memberCourseDto = new MemberCourseDto();
             memberCourseDto.setCourseId(courseId);
             memberCourseDto.setMemberId(memberId);

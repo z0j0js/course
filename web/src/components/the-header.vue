@@ -22,7 +22,7 @@
                                 更多
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">关于我们</a>
+                                <router-link class="dropdown-item" to="/about">关于我们</router-link>
                                 <a class="dropdown-item" href="#">渠道合作</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">更多信息</a>

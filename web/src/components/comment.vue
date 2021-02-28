@@ -1,17 +1,18 @@
 <template>
     <div>
+        <!-- 评论输入框 -->
         <div v-clickoutside="hideReplyBtn" @click="inputFocus" class="my-reply">
             <el-avatar class="header-img" :size="40" :src="myHeader"></el-avatar>
             <div class="reply-info" >
                 <div
-                        tabindex="0"
-                        contenteditable="true"
-                        id="replyInput"
-                        spellcheck="false"
-                        placeholder="输入评论..."
-                        class="reply-input"
-                        @focus="showReplyBtn"
-                        @input="onDivInput($event)"
+                    tabindex="0"
+                    contenteditable="true"
+                    id="replyInput"
+                    spellcheck="false"
+                    placeholder="输入评论..."
+                    class="reply-input"
+                    @focus="showReplyBtn"
+                    @input="onDivInput($event)"
                 >
                 </div>
             </div>
@@ -19,6 +20,7 @@
                 <el-button class="reply-btn" size="medium" @click="sendComment" type="primary">发表评论</el-button>
             </div>
         </div>
+        <!-- 该课程所有评论内容 -->
         <div v-for="(item,i) in comments" :key="i" class="author-title reply-father">
             <el-avatar class="header-img" :size="40" :src="item.headimg"></el-avatar>
             <div class="author-info">
@@ -27,7 +29,7 @@
             </div>
             <div class="icon-btn">
                 <span @click="showReplyInput(i,item.name,item.id)"><i class="iconfont el-icon-s-comment"></i>{{item.commentnum}}</span>
-                <i class="iconfont el-icon-caret-top"></i>{{item.like}}
+                | ❤{{item.like}}
             </div>
             <div class="talk-box">
                 <p>
@@ -109,82 +111,9 @@
                 to:'',
                 toId:-1,
                 comment:{},
-                // 所有评论
-                // comments:[
-                //     {
-                //         name:'Lana Del Rey',
-                //         id:19870621,
-                //         headImg:'https://ae01.alicdn.com/kf/Hd60a3f7c06fd47ae85624badd32ce54dv.jpg',
-                //         comment:'我发布一张新专辑Norman Fucking Rockwell,大家快来听啊',
-                //         time:'2019年9月16日 18:43',
-                //         commentNum:2,
-                //         like:15,
-                //         inputShow:false,
-                //         reply:[
-                //             {
-                //                 from:'Taylor Swift',
-                //                 fromId:19891221,
-                //                 fromHeadImg:'https://ae01.alicdn.com/kf/H94c78935ffa64e7e977544d19ecebf06L.jpg',
-                //                 to:'Lana Del Rey',
-                //                 toId:19870621,
-                //                 comment:'我很喜欢你的新专辑！！',
-                //                 time:'2019年9月16日 18:43',
-                //                 commentNum:1,
-                //                 like:15,
-                //                 inputShow:false
-                //             },
-                //             {
-                //                 from:'Ariana Grande',
-                //                 fromId:1123,
-                //                 fromHeadImg:'https://ae01.alicdn.com/kf/Hf6c0b4a7428b4edf866a9fbab75568e6U.jpg',
-                //                 to:'Lana Del Rey',
-                //                 toId:19870621,
-                //                 comment:'别忘记宣传我们的合作单曲啊',
-                //                 time:'2019年9月16日 18:43',
-                //                 commentNum:0,
-                //                 like:5,
-                //                 inputShow:false
-                //             }
-                //         ]
-                //     },
-                //     {
-                //         name:'Taylor Swift',
-                //         id:19891221,
-                //         headImg:'https://ae01.alicdn.com/kf/H94c78935ffa64e7e977544d19ecebf06L.jpg',
-                //         comment:'我发行了我的新专辑Lover',
-                //         time:'2019年9月16日 18:43',
-                //         commentNum:1,
-                //         like:5,
-                //         inputShow:false,
-                //         reply:[
-                //             {
-                //                 from:'Lana Del Rey',
-                //                 fromId:19870621,
-                //                 fromHeadImg:'https://ae01.alicdn.com/kf/Hd60a3f7c06fd47ae85624badd32ce54dv.jpg',
-                //                 to:'Taylor Swift',
-                //                 toId:19891221,
-                //                 comment:'新专辑和speak now 一样棒！',
-                //                 time:'2019年9月16日 18:43',
-                //                 commentNum:25,
-                //                 like:5,
-                //                 inputShow:false
-                //
-                //             }
-                //         ]
-                //     },
-                //     {
-                //         name:'Norman Fucking Rockwell',
-                //         id:20190830,
-                //         headImg:'https://ae01.alicdn.com/kf/Hdd856ae4c81545d2b51fa0c209f7aa28Z.jpg',
-                //         comment:'Plz buy Norman Fucking Rockwell on everywhere',
-                //         time:'2019年9月16日 18:43',
-                //         commentNum:0,
-                //         like:5,
-                //         inputShow:false,
-                //         reply:[]
-                //     },
-                // ]
                 comments:[],
+                reply:{},
+                replys:[],
             }
         },
         mounted() {
@@ -205,20 +134,24 @@
                     _this.comments = resp.content;
                 })
             },
+
             inputFocus(){
                 var replyInput = document.getElementById('replyInput');
                 replyInput.style.padding= "8px 8px"
                 replyInput.style.border ="2px solid blue"
                 replyInput.focus()
             },
+
             showReplyBtn(){
                 this.btnShow = true
             },
+
             hideReplyBtn(){
                 this.btnShow = false
                 replyInput.style.padding= "10px"
                 replyInput.style.border ="none"
             },
+
             showReplyInput(i,name,id){
                 this.comments[this.index].inputShow = false
                 this.index =i
@@ -226,9 +159,11 @@
                 this.to = name
                 this.toId = id
             },
+
             _inputShow(i){
                 return this.comments[i].inputShow
             },
+
             sendComment(){
                 let _this = this;
                 let loginMember = Tool.getLoginMember();
@@ -276,60 +211,41 @@
                         }
                     })
                 }
-
             },
+
             sendCommentReply(i){
-                if(!this.replyComment){
-                    this.$message({
-                        showClose: true,
-                        type:'warning',
-                        message:'评论不能为空'
-                    })
+                // if(!this.replyComment){
+                //     this.$message({
+                //         showClose: true,
+                //         type:'warning',
+                //         message:'评论不能为空'
+                //     })
+                let _this = this;
+                let loginMember = Tool.getLoginMember();
+                if (Tool.isEmpty(loginMember)) {
+                    Toast.warning("请先登录");
+                    return;
+                }
+                _this.myName = loginMember.name;
+
+                if(Tool.isEmpty(this.replyComment)){
+                    Toast.warning("回复内容不能为空");
+                    return;
                 }else{
                     let a ={}
-                    let timeNow = new Date().getTime();
-                    let time= this.dateStr(timeNow);
+                    let date = new Date()
                     a.from= this.myName
                     a.to = this.to
                     a.fromHeadImg = this.myHeader
                     a.comment =this.replyComment
-                    a.time = time
+                    a.time = _this.dateFormat("YYYY-mm-dd HH:MM", date)
                     a.commentnum = 0
                     a.like = 0
-                    this.comments[i].reply.push(a)
-                    this.replyComment = ''
-                    document.getElementsByClassName("reply-comment-input")[i].innerHTML = ""
+                    //document.getElementsByClassName("reply-comment-input")[i].innerHTML = ""
                 }
             },
             onDivInput: function(e) {
                 this.replyComment = e.target.innerHTML;
-            },
-            dateStr(date){
-                //获取js 时间戳
-                var time=new Date().getTime();
-                //去掉 js 时间戳后三位，与php 时间戳保持一致
-                time=parseInt((time-date)/1000);
-                //存储转换值
-                var s;
-                if(time<60*10){//十分钟内
-                    return '刚刚';
-                }else if((time<60*60)&&(time>=60*10)){
-                    //超过十分钟少于1小时
-                    s = Math.floor(time/60);
-                    return  s+"分钟前";
-                }else if((time<60*60*24)&&(time>=60*60)){
-                    //超过1小时少于24小时
-                    s = Math.floor(time/60/60);
-                    return  s+"小时前";
-                }else if((time<60*60*24*30)&&(time>=60*60*24)){
-                    //超过1天少于30天内
-                    s = Math.floor(time/60/60/24);
-                    return s+"天前";
-                }else{
-                    //超过30天ddd
-                    var date= new Date(parseInt(date));
-                    return date.getFullYear()+"/"+(date.getMonth()+1)+"/"+date.getDate();
-                }
             },
 
             dateFormat(fmt, date) {
@@ -374,7 +290,7 @@
                 min-height 20px
                 line-height 22px
                 padding 10px 10px
-                color #ccc
+                color #767676
                 background-color #fff
                 border-radius 5px
                 &:empty:before
