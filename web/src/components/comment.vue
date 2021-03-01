@@ -38,14 +38,14 @@
             </div>
             <div class="reply-box">
                 <div v-for="(reply,j) in item.reply" :key="j" class="author-title">
-                    <el-avatar class="header-img" :size="40" :src="reply.fromHeadImg"></el-avatar>
+                    <el-avatar class="header-img" :size="40" :src="reply.fromheadimg"></el-avatar>
                     <div class="author-info">
                         <span class="author-name">{{reply.from}}</span>
                         <span class="author-time">{{reply.time}}</span>
                     </div>
                     <div class="icon-btn">
                         <span @click="showReplyInput(i,reply.from,reply.id)"><i class="iconfont el-icon-s-comment"></i>{{reply.commentnum}}</span>
-                        <i class="iconfont el-icon-caret-top"></i>{{reply.like}}
+                        | ❤{{item.like}}
                     </div>
                     <div class="talk-box">
                         <p>
@@ -113,7 +113,6 @@
                 comment:{},
                 comments:[],
                 reply:{},
-                replys:[],
             }
         },
         mounted() {
@@ -158,6 +157,7 @@
                 this.comments[i].inputShow = true
                 this.to = name
                 this.toId = id
+                //console.log(i);
             },
 
             _inputShow(i){
@@ -205,7 +205,7 @@
                         let resp = response.data;
                         if (resp.success) {
                             _this.findComment();
-                            Toast.success("保存成功！");
+                            Toast.success("评论成功！");
                         } else {
                             Toast.warning(resp.message)
                         }
@@ -214,12 +214,6 @@
             },
 
             sendCommentReply(i){
-                // if(!this.replyComment){
-                //     this.$message({
-                //         showClose: true,
-                //         type:'warning',
-                //         message:'评论不能为空'
-                //     })
                 let _this = this;
                 let loginMember = Tool.getLoginMember();
                 if (Tool.isEmpty(loginMember)) {
@@ -232,16 +226,38 @@
                     Toast.warning("回复内容不能为空");
                     return;
                 }else{
-                    let a ={}
-                    let date = new Date()
-                    a.from= this.myName
-                    a.to = this.to
-                    a.fromHeadImg = this.myHeader
-                    a.comment =this.replyComment
-                    a.time = _this.dateFormat("YYYY-mm-dd HH:MM", date)
-                    a.commentnum = 0
-                    a.like = 0
+                    // let a ={}
+                    // let date = new Date()
+                    // a.from= this.myName
+                    // a.to = this.to
+                    // a.fromHeadImg = this.myHeader
+                    // a.comment =this.replyComment
+                    // a.time = _this.dateFormat("YYYY-mm-dd HH:MM", date)
+                    // a.commentnum = 0
+                    // a.like = 0
                     //document.getElementsByClassName("reply-comment-input")[i].innerHTML = ""
+                    // 传参录入数据库
+                    let date = new Date()
+                    _this.reply.from = _this.myName
+
+                    _this.reply.fromheadimg = _this.myHeader
+                    _this.reply.to = ""
+                    // 页面找到的第i个数据
+                    _this.reply.pid = i
+                    _this.reply.comment = _this.replyComment
+                    _this.reply.time = _this.dateFormat("YYYY-mm-dd HH:MM", date)
+                    _this.reply.commentnum = 0
+                    _this.reply.like = 0
+
+                    _this.$ajax.post(process.env.VUE_APP_SERVER + '/business/web/reply/save', _this.reply).then((response)=>{
+                        let resp = response.data;
+                        if (resp.success) {
+                            _this.findComment();
+                            Toast.success("回复成功！");
+                        } else {
+                            Toast.warning(resp.message)
+                        }
+                    })
                 }
             },
             onDivInput: function(e) {

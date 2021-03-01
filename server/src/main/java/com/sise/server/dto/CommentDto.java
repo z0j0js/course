@@ -1,5 +1,6 @@
 package com.sise.server.dto;
 
+import java.util.List;
 
 public class CommentDto {
 
@@ -42,6 +43,8 @@ public class CommentDto {
      * 课程id，用于区分不同课程的评论
      */
     private String courseid;
+
+    private List reply;
 
     public String getName() {
         return name;
@@ -107,6 +110,13 @@ public class CommentDto {
         this.courseid = courseid;
     }
 
+    public List getReply() {
+        return reply;
+    }
+
+    public void setReply(List reply) {
+        this.reply = reply;
+    }
 
     @Override
     public String toString() {
@@ -122,6 +132,7 @@ public class CommentDto {
         sb.append(", commentnum=").append(commentnum);
         sb.append(", like=").append(like);
         sb.append(", courseid=").append(courseid);
+        sb.append(", reply=").append(reply);
         sb.append("]");
         return sb.toString();
     }

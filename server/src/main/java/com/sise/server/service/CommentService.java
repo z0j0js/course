@@ -35,7 +35,7 @@ public class CommentService {
     }
 
     /**
-     * 新课列表查询，只查询已发布的，按创建日期倒序
+     * 评论列表查询，按创建日期倒序与课程
      */
     public List<CommentDto> findComment(String courseid) {
         CommentExample commentExample = new CommentExample();
@@ -44,6 +44,24 @@ public class CommentService {
         List<Comment> commentList = commentMapper.selectByExample(commentExample);
         return CopyUtil.copyList(commentList, CommentDto.class);
     }
+
+    /**
+     * 通过回复找到对应的评论 pid 值
+     * @param num
+     * @return
+     */
+    public String getComment(int num) {
+        PageHelper.startPage(num+1,1);
+        CommentExample commentExample = new CommentExample();
+        commentExample.setOrderByClause("time desc");
+        commentExample.createCriteria().andCourseidLike("00000000");
+        List<Comment> commentList = commentMapper.selectByExample(commentExample);
+        PageInfo<Comment> pageInfo = new PageInfo<>(commentList);
+        String pid = pageInfo.getList().get(0).getId();
+        String to = pageInfo.getList().get(0).getName();
+        return pid+to;
+    }
+
 
     /**
      * 保存，id有值时更新，无值时新增
