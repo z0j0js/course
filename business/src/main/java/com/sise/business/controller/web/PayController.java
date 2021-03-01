@@ -93,13 +93,6 @@ public class PayController {
         //——请在这里编写您的程序（以下代码仅作参考）——
         System.out.println("支付结果"+ signVerified);
         if(signVerified) {
-//            //支付宝交易号
-//            String trade_no = request.getParameter("trade_no");
-//            //商户订单号
-//            String out_trade_no = request.getParameter("out_trade_no");
-//            //付款金额
-//            String total_amount = request.getParameter("total_amount");
-//            out.println("trade_no:"+trade_no+"<br/>out_trade_no:"+out_trade_no+"<br/>total_amount:"+total_amount);
             String out_trade_no = request.getParameter("out_trade_no");
             String memberId = out_trade_no.substring(0,8);
             String courseId = out_trade_no.substring(8,16);
@@ -107,13 +100,10 @@ public class PayController {
             memberCourseDto.setCourseId(courseId);
             memberCourseDto.setMemberId(memberId);
             memberCourseService.enrolls(memberCourseDto);
-            out.println("<a href='http://localhost:8081/detail?id="+ courseId +"'>支付成功</a>");
-//            return "detail";
+            response.sendRedirect("http://localhost:8081/detail?id=" + courseId);
         }else {
             out.println("验签失败");
-//            return "list";
         }
-
     }
 
     //接收支付宝返回的异步通知的信息

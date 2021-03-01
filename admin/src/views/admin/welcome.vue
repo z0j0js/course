@@ -159,22 +159,10 @@
 
                 <tbody>
                 <tr>
-                  <td>开发工具IDEA从入门到爱不释手</td>
+                  <td>计算机网络技术</td>
 
                   <td>
-                    <b class="green">￥299.00</b>
-                  </td>
-
-                  <td>
-                    <span class="label label-warning arrowed arrowed-right">5,132</span>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>开发工具IDEA从入门到爱不释手</td>
-
-                  <td>
-                    <b class="red">￥388.00</b>
+                    <b class="green">￥19.90</b>
                   </td>
 
                   <td>
@@ -183,10 +171,22 @@
                 </tr>
 
                 <tr>
-                  <td>开发工具IDEA从入门到爱不释手</td>
+                  <td>数据结构与算法</td>
 
                   <td>
-                    <b class="green">￥199.00</b>
+                    <b class="red">￥9.90</b>
+                  </td>
+
+                  <td>
+                    <span class="label label-warning arrowed arrowed-right">5,132</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>Java 基础</td>
+
+                  <td>
+                    <b class="green">￥50.00</b>
                   </td>
 
                   <td>
@@ -207,7 +207,7 @@
                 </tr>
 
                 <tr>
-                  <td>开发工具IDEA从入门到爱不释手</td>
+                  <td>Spring Boot核心技术</td>
 
                   <td>
                     <b class="green">￥199.00</b>
