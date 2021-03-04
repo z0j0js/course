@@ -4,6 +4,7 @@ import Index from "./views/index.vue"
 import List from "./views/list.vue"
 import Detail from "./views/detail.vue"
 import About from "./views/about.vue"
+import Purchased from "./views/purchased.vue"
 
 Vue.use(Router);
 
@@ -25,5 +26,9 @@ export default new Router({
     }, {
         path: "/about",
         component: About
-    }]
+    }, {
+        path: "/purchased",
+        component: Purchased
+    }
+    ]
 })

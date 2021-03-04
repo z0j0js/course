@@ -106,7 +106,7 @@
                 index:'0',
                 replyComment:'',
                 myName:'',
-                myHeader:'https://ae01.alicdn.com/kf/Hd60a3f7c06fd47ae85624badd32ce54dv.jpg',
+                myHeader:'',
                 myId:19870621,
                 to:'',
                 toId:-1,
@@ -118,6 +118,8 @@
         mounted() {
             let _this = this;
             _this.courseid = _this.$route.query.id;
+            _this.myName = Tool.getLoginMember().name;
+            _this.myHeader = Tool.getLoginMember().photo;
             _this.findComment();
         },
         directives: {clickoutside},
@@ -171,7 +173,6 @@
                     Toast.warning("请先登录");
                     return;
                 }
-                _this.myName = loginMember.name;
 
                 if(Tool.isEmpty(this.replyComment)){
                     Toast.warning("评论不能为空");
@@ -205,6 +206,7 @@
                         let resp = response.data;
                         if (resp.success) {
                             _this.findComment();
+                            _this.comment.comment = '';
                             Toast.success("评论成功！");
                         } else {
                             Toast.warning(resp.message)
@@ -220,7 +222,6 @@
                     Toast.warning("请先登录");
                     return;
                 }
-                _this.myName = loginMember.name;
 
                 if(Tool.isEmpty(this.replyComment)){
                     Toast.warning("回复内容不能为空");
@@ -253,6 +254,7 @@
                         let resp = response.data;
                         if (resp.success) {
                             _this.findComment();
+                            _this.reply.comment = '';
                             Toast.success("回复成功！");
                         } else {
                             Toast.warning(resp.message)

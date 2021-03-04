@@ -97,4 +97,14 @@ public class SectionService {
         List<SectionDto> sectionDtoList = CopyUtil.copyList(sectionList, SectionDto.class);
         return sectionDtoList;
     }
+
+    /**
+     * 统计总数
+     * @return
+     */
+    public int getTotal() {
+        List<Section> sectionList = sectionMapper.selectByExample(null);
+        int total = sectionList.size();
+        return total;
+    }
 }

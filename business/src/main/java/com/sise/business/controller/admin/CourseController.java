@@ -96,4 +96,12 @@ public class CourseController {
         courseService.sort(sortDto);
         return responseDto;
     }
+
+    @GetMapping("/getTotal")
+    public ResponseDto getTotal() {
+        ResponseDto responseDto = new ResponseDto();
+        int total = courseService.getTotal();
+        responseDto.setContent(total);
+        return responseDto;
+    }
 }

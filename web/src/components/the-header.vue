@@ -22,14 +22,15 @@
                                 更多
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <router-link class="dropdown-item" to="/purchased">已购课程</router-link>
                                 <router-link class="dropdown-item" to="/about">关于我们</router-link>
-                                <a class="dropdown-item" href="#">渠道合作</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">更多信息</a>
                             </div>
                         </li>
                     </ul>
                     <span v-show="loginMember.id" class="text-black">您好：{{loginMember.name}}</span>
+                    <img class="nav-user-photo" :src="loginMember.photo">
                     <button v-show="loginMember.id" v-on:click="logout()" class="btn btn-outline-success my-2 my-sm-0">退出登录</button>
                     <button v-show="!loginMember.id" v-on:click="openLoginModal()" class="btn btn-outline-success my-2 my-sm-0">登录/注册</button>
                 </div>
@@ -87,3 +88,12 @@
         }
     }
 </script>
+
+<style>
+    .nav-user-photo {
+        margin: -4px 8px 0 6px;
+        border-radius: 100%;
+        border: 2px solid #FFF;
+        max-width: 40px;
+    }
+</style>

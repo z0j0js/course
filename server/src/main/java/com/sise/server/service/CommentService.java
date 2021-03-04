@@ -96,4 +96,14 @@ public class CommentService {
     public void delete(String id) {
         commentMapper.deleteByPrimaryKey(id);
     }
+
+    /**
+     * 统计总数
+     * @return
+     */
+    public int getTotal() {
+        List<Comment> commentList = commentMapper.selectByExample(null);
+        int total = commentList.size();
+        return total;
+    }
 }

@@ -1,5 +1,7 @@
 package com.sise.server.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import com.sise.server.domain.Member;
 import com.sise.server.domain.MemberExample;
 import com.sise.server.dto.LoginMemberDto;
@@ -10,8 +12,6 @@ import com.sise.server.exception.BusinessExceptionCode;
 import com.sise.server.mapper.MemberMapper;
 import com.sise.server.util.CopyUtil;
 import com.sise.server.util.UuidUtil;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -142,5 +142,15 @@ public class MemberService {
             member.setPassword(memberDto.getPassword());
             memberMapper.updateByPrimaryKeySelective(member);
         }
+    }
+
+    /**
+     * 统计总数
+     * @return
+     */
+    public int getTotal() {
+        List<Member> memberList = memberMapper.selectByExample(null);
+        int total = memberList.size();
+        return total;
     }
 }

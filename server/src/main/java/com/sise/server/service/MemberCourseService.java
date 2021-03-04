@@ -1,14 +1,17 @@
 package com.sise.server.service;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.sise.server.domain.Course;
+import com.sise.server.domain.CourseExample;
 import com.sise.server.domain.MemberCourse;
 import com.sise.server.domain.MemberCourseExample;
 import com.sise.server.dto.MemberCourseDto;
 import com.sise.server.dto.PageDto;
+import com.sise.server.mapper.CourseMapper;
 import com.sise.server.mapper.MemberCourseMapper;
 import com.sise.server.util.CopyUtil;
 import com.sise.server.util.UuidUtil;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 import org.springframework.util.StringUtils;
@@ -22,6 +25,9 @@ public class MemberCourseService {
 
     @Resource
     private MemberCourseMapper memberCourseMapper;
+
+    @Resource
+    private CourseMapper courseMapper;
 
     /**
      * 列表查询
@@ -106,6 +112,24 @@ public class MemberCourseService {
     }
 
     /**
+     * 计算总收益
+     * @return
+     */
+    public int getReceipts() {
+        MemberCourseExample memberCourseExample = new MemberCourseExample();
+        List<MemberCourse> memberCourseList = memberCourseMapper.selectByExample(memberCourseExample);
+        int total = 0;
+        for (int i = 0;  i < memberCourseList.size(); i++) {
+            CourseExample courseExample = new CourseExample();
+            courseExample.createCriteria().andIdEqualTo(memberCourseList.get(i).getCourseId());
+            List<Course> courses = courseMapper.selectByExample(courseExample);
+            int price = courses.get(0).getPrice().intValue();
+            total = total + price;
+        }
+        return total;
+    }
+
+    /**
      * 获取报名信息
      */
     public MemberCourseDto getEnroll(MemberCourseDto memberCourseDto) {
@@ -120,5 +144,12 @@ public class MemberCourseService {
     public void enrolls(MemberCourseDto memberCourseDto) {
         MemberCourse memberCourse = CopyUtil.copy(memberCourseDto, MemberCourse.class);
         this.insert(memberCourse);
+    }
+
+    public List<MemberCourse> purchased(String memberId) {
+        MemberCourseExample example = new MemberCourseExample();
+        example.createCriteria().andMemberIdEqualTo(memberId);
+        List<MemberCourse> courseList = memberCourseMapper.selectByExample(example);
+        return courseList;
     }
 }

@@ -53,4 +53,12 @@ public class ChapterController {
         chapterService.delete(id);
         return responseDto;
     }
+
+    @GetMapping("/getTotal")
+    public ResponseDto getTotal() {
+        ResponseDto responseDto = new ResponseDto();
+        int total = chapterService.getTotal();
+        responseDto.setContent(total);
+        return responseDto;
+    }
 }

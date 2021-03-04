@@ -86,4 +86,12 @@ public class CommentController {
         commentService.delete(id);
         return responseDto;
     }
+
+    @GetMapping("/getTotal")
+    public ResponseDto getTotal() {
+        ResponseDto responseDto = new ResponseDto();
+        int total = commentService.getTotal();
+        responseDto.setContent(total);
+        return responseDto;
+    }
 }

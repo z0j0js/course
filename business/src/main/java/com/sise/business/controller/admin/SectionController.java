@@ -59,4 +59,12 @@ public class SectionController {
         sectionService.delete(id);
         return responseDto;
     }
+
+    @GetMapping("/getTotal")
+    public ResponseDto getTotal() {
+        ResponseDto responseDto = new ResponseDto();
+        int total = sectionService.getTotal();
+        responseDto.setContent(total);
+        return responseDto;
+    }
 }

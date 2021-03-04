@@ -63,7 +63,7 @@
     },
     mounted() {
       let _this = this;
-      _this.$refs.pagination.size = 1;
+      _this.$refs.pagination.size = 6;
       _this.listCourse(1);
       _this.allCategory();
     },
@@ -171,7 +171,7 @@
         $("#category-" + level2Id).addClass("on");
 
         // 点击二级分类时，设置变量，用于课程筛选
-        // 如果点击的是【无限】，则二级分类id为空
+        // 如果点击的是【不限】，则二级分类id为空
         if (level2Id === "11111111") {
           _this.level2Id = null;
         } else {

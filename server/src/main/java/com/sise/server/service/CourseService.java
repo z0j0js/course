@@ -5,6 +5,7 @@ import com.github.pagehelper.PageInfo;
 import com.sise.server.domain.Course;
 import com.sise.server.domain.CourseContent;
 import com.sise.server.domain.CourseExample;
+import com.sise.server.domain.MemberCourse;
 import com.sise.server.dto.*;
 import com.sise.server.enums.CourseStatusEnum;
 import com.sise.server.mapper.CourseContentMapper;
@@ -17,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -204,5 +206,25 @@ public class CourseService {
         courseDto.setSections(sectionDtoList);
 
         return courseDto;
+    }
+
+    /**
+     * 统计总课程数
+     * @return
+     */
+    public int getTotal() {
+        List<Course> courseList = courseMapper.selectByExample(null);
+        int total = courseList.size();
+        return total;
+    }
+
+    public List<CourseDto> purchased(List<MemberCourse> memberCourseList){
+        ArrayList<Course> courseList = new ArrayList<>();
+        for (int i = 0; i < memberCourseList.size(); i++) {
+            String courseId = memberCourseList.get(i).getCourseId();
+            Course course = courseMapper.selectByPrimaryKey(courseId);
+            courseList.add(course);
+        }
+        return CopyUtil.copyList(courseList, CourseDto.class);
     }
 }

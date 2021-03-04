@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      <button v-on:click="add()" class="btn btn-white btn-default btn-round">
+      <button v-show="userid === 'XC5B6w4l'" v-on:click="add()" class="btn btn-white btn-default btn-round">
         <i class="ace-icon fa fa-edit"></i>
         新增
       </button>
@@ -49,7 +49,7 @@
                       </div>
 
                       <p>
-                          <span class="blue bolder bigger-150">{{course.price}}&nbsp;<i class="fa fa-rmb"></i></span>&nbsp;
+                          <span class="blue bolder bigger-150"><i class="fa fa-rmb"></i> {{course.price}}&nbsp;</span>&nbsp;
                       </p>
                       <p>{{course.summary}}</p>
                       <p>
@@ -67,7 +67,7 @@
                           <button v-on:click="openSortModal(course)" class="btn btn-white btn-xs btn-info btn-round">
                               排序
                           </button>&nbsp;
-                          <button v-on:click="edit(course)" class="btn btn-white btn-xs btn-info btn-round">
+                          <button  v-show="userid === 'XC5B6w4l'" v-on:click="edit(course)" class="btn btn-white btn-xs btn-info btn-round">
                               编辑
                           </button>&nbsp;
                           <button v-on:click="del(course.id)" class="btn btn-white btn-xs btn-warning btn-round">
@@ -132,7 +132,7 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">时长</label>
                 <div class="col-sm-10">
-                  <input v-model="course.time" class="form-control">
+                  <input v-model="course.time" class="form-control" disabled>
                 </div>
               </div>
               <div class="form-group">
@@ -168,7 +168,7 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label">报名数</label>
                 <div class="col-sm-10">
-                  <input v-model="course.enroll" class="form-control">
+                  <input v-model="course.enroll" class="form-control" disabled>
                 </div>
               </div>
               <div class="form-group">
@@ -254,6 +254,7 @@
           newSort: 0
         },
         teachers: [],
+          userid : Tool.getLoginUser().id,
       }
     },
     mounted: function() {
@@ -264,6 +265,7 @@
       _this.list(1);
       // sidebar激活样式方法一
       // this.$parent.activeSidebar("business-course-sidebar");
+        console.log("是谁登录了系统："+ Tool.getLoginUser().id)
 
     },
     methods: {

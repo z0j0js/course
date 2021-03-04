@@ -33,6 +33,16 @@ public class MemberCourseController {
     }
 
     /**
+     * 总收益查询
+     */
+    @GetMapping("/getReceipts")
+    public ResponseDto getReceipts() {
+        ResponseDto responseDto = new ResponseDto();
+        responseDto.setContent(memberCourseService.getReceipts());
+        return responseDto;
+    }
+
+    /**
      * 保存，id有值时更新，无值时新增
      */
     @PostMapping("/save")

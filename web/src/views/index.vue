@@ -67,12 +67,22 @@
                     {
                         link: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture3.png',
                         image: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture3.png',
-                    },{
+                    },
+                    {
                         link: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture4.png',
                         image: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture4.png',
-                    },{
+                    },
+                    {
                         link: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture5.png',
                         image: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture5.png',
+                    },
+                    {
+                        link: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture6.png',
+                        image: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture6.png',
+                    },
+                    {
+                        link: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture7.png',
+                        image: 'https://sise-course.oss-cn-shenzhen.aliyuncs.com/picture/picture7.png',
                     },
                 ],
             }

@@ -82,4 +82,14 @@ public class ChapterService {
         List<ChapterDto> chapterDtoList = CopyUtil.copyList(chapterList, ChapterDto.class);
         return chapterDtoList;
     }
+
+    /**
+     * 统计总数
+     * @return
+     */
+    public int getTotal() {
+        List<Chapter> chapterList = chapterMapper.selectByExample(null);
+        int total = chapterList.size();
+        return total;
+    }
 }

@@ -5,45 +5,44 @@
       <div class="col-xs-12">
         <div class="text-center">
           <span class="btn btn-app btn-sm btn-light no-hover">
-              <span class="line-height-1 bigger-170 blue"> 518 </span>
+              <span class="line-height-1 bigger-170 blue"> {{course}} </span>
               <br>
               <span class="line-height-1 smaller-90"> 课程 </span>
           </span>
           <span class="btn btn-app btn-sm btn-yellow no-hover">
-              <span class="line-height-1 bigger-170"> 6,321 </span>
+              <span class="line-height-1 bigger-170"> {{chapter}} </span>
 
               <br>
               <span class="line-height-1 smaller-90"> 大章 </span>
           </span>
 
           <span class="btn btn-app btn-sm btn-pink no-hover">
-              <span class="line-height-1 bigger-170"> 4,182 </span>
+              <span class="line-height-1 bigger-170"> {{section}} </span>
 
               <br>
               <span class="line-height-1 smaller-90"> 小节 </span>
           </span>
 
           <span class="btn btn-app btn-sm btn-success no-hover">
-              <span class="line-height-1 bigger-170"> 5.23 </span>
+              <span class="line-height-1 bigger-170"> {{member}} </span>
 
               <br>
-              <span class="line-height-1 smaller-90"> 会员(万) </span>
-          </span>
-
-          <span class="btn btn-app btn-sm btn-primary no-hover">
-              <span class="line-height-1 bigger-170"> 12.76 </span>
-
-              <br>
-              <span class="line-height-1 smaller-90"> 报名(万) </span>
+              <span class="line-height-1 smaller-90"> 会员 </span>
           </span>
 
           <span class="btn btn-app btn-sm btn-grey no-hover">
-              <span class="line-height-1 bigger-170"> 32.96 </span>
+              <span class="line-height-1 bigger-170"> {{comment}} </span>
 
               <br>
-              <span class="line-height-1 smaller-90"> 评论(万) </span>
+              <span class="line-height-1 smaller-90"> 评论 </span>
           </span>
 
+          <span class="btn btn-app btn-sm btn-primary no-hover">
+              <span class="line-height-1 bigger-170"> {{receipts}} </span>
+
+              <br>
+              <span class="line-height-1 smaller-90"> 总收益(元) </span>
+          </span>
         </div>
 
         <div class="space-12"></div>
@@ -248,14 +247,103 @@
 <script>
   export default {
     name: "welcome",
+    data: function() {
+      return {
+        course: '',
+        chapter: '',
+        section: '',
+        member: '',
+        comment: '',
+        receipts: '',
+      }
+    },
     mounted: function () {
       let _this = this;
       // sidebar激活样式方法一
       // this.$parent.activeSidebar("welcome-sidebar");
       _this.drawSaleChart();
       _this.drawPieChart();
+
+      _this.getCourse();
+      _this.getChapter();
+      _this.getSection();
+      _this.getMember();
+      _this.getComment();
+      _this.getReceipts();
     },
     methods: {
+      /**
+       * 获取课程数
+       */
+      getCourse() {
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/admin/course/getTotal', {
+        }).then((response)=>{
+          let resp = response.data;
+          _this.course = resp.content;
+        })
+      },
+
+      /**
+       * 获取大章数
+       */
+      getChapter() {
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/admin/chapter/getTotal', {
+        }).then((response)=>{
+          let resp = response.data;
+          _this.chapter = resp.content;
+        })
+      },
+
+      /**
+       * 获取小节数
+       */
+      getSection() {
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/admin/section/getTotal', {
+        }).then((response)=>{
+          let resp = response.data;
+          _this.section = resp.content;
+        })
+      },
+
+      /**
+       * 获取会员数
+       */
+      getMember() {
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/admin/member/getTotal', {
+        }).then((response)=>{
+          let resp = response.data;
+          _this.member = resp.content;
+        })
+      },
+
+      /**
+       * 获取评论数
+       */
+      getComment() {
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/web/comment/getTotal', {
+        }).then((response)=>{
+          let resp = response.data;
+          _this.comment = resp.content;
+        })
+      },
+
+      /**
+       * 获取总收益
+       */
+      getReceipts() {
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/admin/memberCourse/getReceipts', {
+        }).then((response)=>{
+          let resp = response.data;
+          _this.receipts = resp.content;
+        })
+      },
+
       drawSaleChart() {
         // 生成随机两组数据
         let d1 = [];
@@ -295,9 +383,9 @@
       drawPieChart() {
         let placeholder = $('#piechart-placeholder').css({'width':'90%' , 'min-height':'180px'});
         let data = [
-          { label: "Java",  data: 38.7, color: "#68BC31"},
-          { label: "Python",  data: 24.5, color: "#2091CF"},
-          { label: "Android",  data: 18.6, color: "#DA5430"},
+          { label: "前端技术",  data: 38.7, color: "#68BC31"},
+          { label: "后端技术",  data: 24.5, color: "#2091CF"},
+          { label: "计算机基础",  data: 18.6, color: "#DA5430"},
           { label: "其它",  data: 10, color: "#FEE074"},
         ];
         $.plot(placeholder, data, {
