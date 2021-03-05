@@ -43,6 +43,17 @@ public class MemberCourseController {
     }
 
     /**
+     * 统计图表
+     * @return
+     */
+    @GetMapping("/statistics")
+    public ResponseDto statistics() {
+        ResponseDto responseDto = new ResponseDto();
+        responseDto.setContent(memberCourseService.statistics());
+        return responseDto;
+    }
+
+    /**
      * 保存，id有值时更新，无值时新增
      */
     @PostMapping("/save")

@@ -108,7 +108,7 @@
           <div class="widget-header widget-header-flat">
             <h4 class="widget-title lighter">
               <i class="ace-icon fa fa-signal"></i>
-              销售量
+              日课程销售量
             </h4>
 
           </div>
@@ -261,8 +261,6 @@
       let _this = this;
       // sidebar激活样式方法一
       // this.$parent.activeSidebar("welcome-sidebar");
-      _this.drawSaleChart();
-      _this.drawPieChart();
 
       _this.getCourse();
       _this.getChapter();
@@ -270,6 +268,10 @@
       _this.getMember();
       _this.getComment();
       _this.getReceipts();
+
+      _this.drawSaleChart();
+      _this.drawPieChart();
+
     },
     methods: {
       /**
@@ -344,40 +346,41 @@
         })
       },
 
+      /**
+       * 获取三十天统计购课数，绘制折线统计图
+       */
       drawSaleChart() {
-        // 生成随机两组数据
-        let d1 = [];
-        for (let i = 0; i < 30; i += 1) {
-          d1.push([i + 1, 2000 + Math.floor((Math.random()*100)+1)]);
-        }
-        let d2 = [];
-        for (let i = 0; i < 30; i += 1) {
-          d2.push([i + 1, 1900 + Math.floor((Math.random()*100)+1)]);
-        }
-
-        let sales_charts = $('#sales-charts').css({'width':'100%' , 'height':'220px'});
-        $.plot("#sales-charts", [
-          { label: "最近30天", data: d1 },
-          { label: "上一周期", data: d2 },
-        ], {
-          hoverable: true,
-          shadowSize: 0,
-          series: {
-            lines: { show: true },
-            points: { show: true }
-          },
-          xaxis: {
-            tickLength: 0
-          },
-          yaxis: {
-            tickLength: 0
-          },
-          grid: {
-            backgroundColor: { colors: [ "#fff", "#fff" ] },
-            borderWidth: 1,
-            borderColor:'#555'
-          }
-        });
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/admin/memberCourse/statistics', {
+        }).then((response)=>{
+          let resp = response.data;
+          let d1 = resp.content;
+          let d2 = [];
+          let sales_charts = $('#sales-charts').css({'width':'100%' , 'height':'220px'});
+          $.plot("#sales-charts", [
+            { label: "上个月30天", data: d1 },
+            // { label: "最近30天", data: d1 },
+            // { label: "上一周期", data: d2 },
+          ], {
+            hoverable: true,
+            shadowSize: 0,
+            series: {
+              lines: { show: true },
+              points: { show: true }
+            },
+            xaxis: {
+              tickLength: 0
+            },
+            yaxis: {
+              tickLength: 0
+            },
+            grid: {
+              backgroundColor: { colors: [ "#fff", "#fff" ] },
+              borderWidth: 1,
+              borderColor:'#555'
+            }
+          });
+        })
       },
 
       drawPieChart() {

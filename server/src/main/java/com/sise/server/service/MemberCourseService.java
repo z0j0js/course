@@ -115,18 +115,35 @@ public class MemberCourseService {
      * 计算总收益
      * @return
      */
-    public int getReceipts() {
+    public float getReceipts() {
         MemberCourseExample memberCourseExample = new MemberCourseExample();
         List<MemberCourse> memberCourseList = memberCourseMapper.selectByExample(memberCourseExample);
-        int total = 0;
+        float total = 0.0f;
         for (int i = 0;  i < memberCourseList.size(); i++) {
             CourseExample courseExample = new CourseExample();
             courseExample.createCriteria().andIdEqualTo(memberCourseList.get(i).getCourseId());
             List<Course> courses = courseMapper.selectByExample(courseExample);
-            int price = courses.get(0).getPrice().intValue();
+            float price = courses.get(0).getPrice().floatValue();
             total = total + price;
         }
         return total;
+    }
+
+    /**
+     * 统计图表
+     * @return
+     */
+    public int[][] statistics() {
+        //ArrayList arrayList = new ArrayList();
+        int[][] arr = new int[30][2];
+        for (int i = 1; i <= 30; i++) {
+            int result = memberCourseMapper.statistics(i);
+            arr[i-1][0] = i;
+            arr[i-1][1] = result;
+            //arrayList.add(result);
+        }
+        return arr;
+        //return arrayList;
     }
 
     /**
