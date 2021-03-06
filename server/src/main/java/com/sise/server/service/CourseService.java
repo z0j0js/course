@@ -117,6 +117,13 @@ public class CourseService {
     }
 
     /**
+     * 更新课程报名数
+     */
+    public void updateEnroll(String courseid) {
+        courseMapper.updateEnroll(courseid);
+    }
+
+    /**
      * 删除
      */
     public void delete(String id) {

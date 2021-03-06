@@ -28,8 +28,10 @@
                 <span class="author-time">{{item.time}}</span>
             </div>
             <div class="icon-btn">
-                <span @click="showReplyInput(i,item.name,item.id)"><i class="iconfont el-icon-s-comment"></i>{{item.commentnum}}</span>
-                | ❤{{item.like}}
+<!--                <span @click="showReplyInput(i,item.name,item.id)"><i class="iconfont el-icon-s-comment"></i>{{item.commentnum}}</span>-->
+<!--                | ❤{{item.like}}-->
+                <span @click="showReplyInput(i,item.name,item.id)"><i class="iconfont el-icon-s-comment"></i></span>
+                | ❤
             </div>
             <div class="talk-box">
                 <p>
@@ -44,8 +46,10 @@
                         <span class="author-time">{{reply.time}}</span>
                     </div>
                     <div class="icon-btn">
-                        <span @click="showReplyInput(i,reply.from,reply.id)"><i class="iconfont el-icon-s-comment"></i>{{reply.commentnum}}</span>
-                        | ❤{{item.like}}
+<!--                        <span @click="showReplyInput(i,reply.from,reply.id)"><i class="iconfont el-icon-s-comment"></i>{{reply.commentnum}}</span>-->
+<!--                        | ❤{{item.like}}-->
+                        <span @click="showReplyInput(i,reply.from,reply.id)"><i class="iconfont el-icon-s-comment"></i></span>
+                        | ❤
                     </div>
                     <div class="talk-box">
                         <p>

@@ -3,6 +3,7 @@ package com.sise.business.controller.admin;
 import com.sise.server.dto.MemberCourseDto;
 import com.sise.server.dto.PageDto;
 import com.sise.server.dto.ResponseDto;
+import com.sise.server.service.CourseService;
 import com.sise.server.service.MemberCourseService;
 import com.sise.server.util.ValidatorUtil;
 import org.slf4j.Logger;
@@ -20,6 +21,9 @@ public class MemberCourseController {
 
     @Resource
     private MemberCourseService memberCourseService;
+
+    @Resource
+    private CourseService courseService;
 
     /**
      * 列表查询
@@ -39,6 +43,18 @@ public class MemberCourseController {
     public ResponseDto getReceipts() {
         ResponseDto responseDto = new ResponseDto();
         responseDto.setContent(memberCourseService.getReceipts());
+        return responseDto;
+    }
+
+    /**
+     * 订单总数查询
+     * @return
+     */
+    @GetMapping("/getTotal")
+    public ResponseDto getTotal() {
+        ResponseDto responseDto = new ResponseDto();
+        int total = memberCourseService.getTotal();
+        responseDto.setContent(total);
         return responseDto;
     }
 
@@ -65,6 +81,7 @@ public class MemberCourseController {
 
         ResponseDto responseDto = new ResponseDto();
         memberCourseService.save(memberCourseDto);
+        courseService.updateEnroll(memberCourseDto.getCourseId());
         responseDto.setContent(memberCourseDto);
         return responseDto;
     }

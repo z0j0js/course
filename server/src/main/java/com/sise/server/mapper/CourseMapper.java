@@ -2,8 +2,9 @@ package com.sise.server.mapper;
 
 import com.sise.server.domain.Course;
 import com.sise.server.domain.CourseExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface CourseMapper {
     long countByExample(CourseExample example);
@@ -27,4 +28,6 @@ public interface CourseMapper {
     int updateByPrimaryKeySelective(Course record);
 
     int updateByPrimaryKey(Course record);
+
+    int updateEnroll(String courseid);
 }

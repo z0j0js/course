@@ -5,6 +5,7 @@ import com.alipay.api.AlipayClient;
 import com.alipay.api.internal.util.AlipaySignature;
 import com.alipay.api.request.AlipayTradePagePayRequest;
 import com.sise.server.dto.MemberCourseDto;
+import com.sise.server.service.CourseService;
 import com.sise.server.service.MemberCourseService;
 import com.sise.server.util.AppUtil;
 import org.slf4j.Logger;
@@ -38,6 +39,9 @@ public class PayController {
 
     @Resource
     private MemberCourseService memberCourseService;
+
+    @Resource
+    private CourseService courseService;
 
     //处理支付请求
     @PostMapping("/buy")
@@ -100,6 +104,7 @@ public class PayController {
             memberCourseDto.setCourseId(courseId);
             memberCourseDto.setMemberId(memberId);
             memberCourseService.enrolls(memberCourseDto);
+            courseService.updateEnroll(memberCourseDto.getCourseId());
             response.sendRedirect("http://localhost:8081/detail?id=" + courseId);
         }else {
             out.println("验签失败");

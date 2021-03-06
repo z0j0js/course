@@ -350,4 +350,9 @@
       teacher_id = #{teacherId,jdbcType=CHAR}
     where id = #{id,jdbcType=CHAR}
   </update>
+  <update id="updateEnroll" parameterType="java.lang.String">
+    update course
+    set enroll = (enroll+1)
+    where id = #{courseid}
+  </update>
 </mapper>

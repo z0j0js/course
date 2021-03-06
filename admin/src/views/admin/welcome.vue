@@ -60,11 +60,11 @@
           </div>
 
           <div class="infobox-data">
-            <span class="infobox-data-number">332</span>
+            <span class="infobox-data-number">{{comment}}</span>
             <div class="infobox-content">新增评论</div>
           </div>
 
-          <div class="stat stat-success">8%</div>
+<!--          <div class="stat stat-success">8%</div>-->
         </div>
 
         <div class="infobox infobox-blue">
@@ -73,14 +73,14 @@
           </div>
 
           <div class="infobox-data">
-            <span class="infobox-data-number">58</span>
+            <span class="infobox-data-number">{{member}}</span>
             <div class="infobox-content">新增注册会员</div>
           </div>
 
-          <div class="badge badge-success">
-            +10%
-            <i class="ace-icon fa fa-arrow-up"></i>
-          </div>
+<!--          <div class="badge badge-success">-->
+<!--            +10%-->
+<!--            <i class="ace-icon fa fa-arrow-up"></i>-->
+<!--          </div>-->
         </div>
 
         <div class="infobox infobox-pink">
@@ -89,10 +89,10 @@
           </div>
 
           <div class="infobox-data">
-            <span class="infobox-data-number">108</span>
-            <div class="infobox-content">课程报名</div>
+            <span class="infobox-data-number">{{total}}</span>
+            <div class="infobox-content">课程购买</div>
           </div>
-          <div class="stat stat-important">4%</div>
+<!--          <div class="stat stat-important">4%</div>-->
         </div>
 
         <div class="space-12"></div>
@@ -132,7 +132,7 @@
           <div class="widget-header widget-header-flat">
             <h4 class="widget-title lighter">
               <i class="ace-icon fa fa-star orange"></i>
-              课程销售排名
+              课程销售
             </h4>
 
           </div>
@@ -153,6 +153,9 @@
                   <th>
                     <i class="ace-icon fa fa-caret-right blue"></i>购买数
                   </th>
+                  <th>
+                    <i class="ace-icon fa fa-caret-right blue"></i>课程收益
+                  </th>
                 </tr>
                 </thead>
 
@@ -161,11 +164,14 @@
                   <td>计算机网络技术</td>
 
                   <td>
-                    <b class="green">￥19.90</b>
+                    <b class="green">￥119.00</b>
                   </td>
 
                   <td>
-                    <span class="label label-warning arrowed arrowed-right">3,132</span>
+                    <span class="label label-warning arrowed arrowed-right">6</span>
+                  </td>
+                  <td>
+                    <b class="red">￥714.00</b>
                   </td>
                 </tr>
 
@@ -173,11 +179,15 @@
                   <td>数据结构与算法</td>
 
                   <td>
-                    <b class="red">￥9.90</b>
+                    <b class="green">￥188.00</b>
                   </td>
 
                   <td>
-                    <span class="label label-warning arrowed arrowed-right">5,132</span>
+                    <span class="label label-warning arrowed arrowed-right">5</span>
+                  </td>
+
+                  <td>
+                    <b class="red">￥940.00</b>
                   </td>
                 </tr>
 
@@ -185,37 +195,46 @@
                   <td>Java 基础</td>
 
                   <td>
-                    <b class="green">￥50.00</b>
+                    <b class="green">￥268.00</b>
                   </td>
 
                   <td>
-                    <span class="label label-warning arrowed arrowed-right">2,132</span>
+                    <span class="label label-warning arrowed arrowed-right">4</span>
+                  </td>
+                  <td>
+                    <b class="red">￥1072.00</b>
                   </td>
                 </tr>
 
-                <tr>
-                  <td>开发工具IDEA从入门到爱不释手</td>
+<!--                <tr>-->
+<!--                  <td>开发工具IDEA从入门到爱不释手</td>-->
 
-                  <td>
-                    <b class="green">￥299.00</b>
-                  </td>
+<!--                  <td>-->
+<!--                    <b class="green">￥299.00</b>-->
+<!--                  </td>-->
 
-                  <td>
-                    <span class="label label-success arrowed arrowed-right">1,654</span>
-                  </td>
-                </tr>
+<!--                  <td>-->
+<!--                    <span class="label label-success arrowed arrowed-right">1,654</span>-->
+<!--                  </td>-->
+<!--                  <td>-->
+<!--                    <b class="red">￥188.00</b>-->
+<!--                  </td>-->
+<!--                </tr>-->
 
-                <tr>
-                  <td>Spring Boot核心技术</td>
+<!--                <tr>-->
+<!--                  <td>Spring Boot核心技术</td>-->
 
-                  <td>
-                    <b class="green">￥199.00</b>
-                  </td>
+<!--                  <td>-->
+<!--                    <b class="green">￥68.00</b>-->
+<!--                  </td>-->
 
-                  <td>
-                    <span class="label label-success arrowed arrowed-right">1,254</span>
-                  </td>
-                </tr>
+<!--                  <td>-->
+<!--                    <span class="label label-success arrowed arrowed-right">1,254</span>-->
+<!--                  </td>-->
+<!--                  <td>-->
+<!--                    <b class="red">￥188.00</b>-->
+<!--                  </td>-->
+<!--                </tr>-->
                 </tbody>
               </table>
             </div><!-- /.widget-main -->
@@ -227,7 +246,7 @@
           <div class="widget-header widget-header-flat">
             <h4 class="widget-title lighter">
               <i class="ace-icon fa fa-star orange"></i>
-              分类销售排名
+              分类销售
             </h4>
 
           </div>
@@ -255,6 +274,7 @@
         member: '',
         comment: '',
         receipts: '',
+        total:'',
       }
     },
     mounted: function () {
@@ -268,6 +288,8 @@
       _this.getMember();
       _this.getComment();
       _this.getReceipts();
+      _this.getReceipts();
+      _this.getTotal();
 
       _this.drawSaleChart();
       _this.drawPieChart();
@@ -331,6 +353,18 @@
         }).then((response)=>{
           let resp = response.data;
           _this.comment = resp.content;
+        })
+      },
+
+      /**
+       * 获取订单数
+       */
+      getTotal() {
+        let _this = this;
+        _this.$ajax.get(process.env.VUE_APP_SERVER + '/business/admin/memberCourse/getTotal', {
+        }).then((response)=>{
+          let resp = response.data;
+          _this.total = resp.content;
         })
       },
 
